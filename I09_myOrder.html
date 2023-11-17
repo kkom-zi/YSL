@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ysl.js"></script>  
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <title>YSL</title>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <a href="index.html">ENJOY COMPLIMENTARY SHIPPING AND SIGNATURE SAINT LAURENT PACKAGING FOR ANY ORDER PLACED ON YSL.COM.</a>
+    </div>
+    <div class="panel">
+      <div id="searchPanel">
+        <input type="button" value="close" class="btn_close">
+        <input type="search" placeholder="SEARCH FOR PRODUCTS" autocomplete="" title="Search for products">
+        <h2>SUGGESTIONS</h2>
+        <ul>
+          <li><a href="women_NEW.html">NEW - WOMEN'S SUMMER 23</a></li>
+          <li><a href="men_NEW.html">NEW - MEN'S SPRING 23</a></li>
+          <li><a href="women_BAG_all-1.html">WOMEN'S HANDBAGS</a></li>
+          <li><a href="women_minibag.html">WOMEN'S MINI BAGS</a></li>
+          <li><a href="women_SHOES_all.html">WOMEN'S SHOES</a></li>
+        </ul>
+      </div>
+      <div id="wishPanel">
+        <h2>WISHLIST 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>JAMIE MEDIUM CHAIN BAG "CARRÉ RIVE GAUCHE" IN LAMBSKIN AND SUEDE</dt>
+              <dd>BLACK</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 3,300</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteWish">
+          </li>
+        </ul>
+        <p id="deleteWish">YOUR WISHLIST IS EMPTY.</p>
+        <div>
+          <a href="I10_myWishlist.html" class="btn_view">VIEW WISHIST</a>
+        </div>
+      </div>
+      <div id="cartPanel">
+        <h2>SHOPPING BAG 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>CASSANDRE MATELASSÉ CARD CASE IN GRAIN DE POUDRE EMBOSSED LEATHER</dt>
+              <dd>FUCHSIA</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 325</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteCart">
+          </li>
+        </ul>
+        <p id="deleteCart">YOUR CART IS EMPTY.</p>
+        <div>
+          <mark>ESTIMATED TOTAL</mark>
+          <strong>$ 325</strong>
+          <a href="CK01_checkOut.html" class="btn_check">CHECK OUT</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <h1>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="welcome to saint laurent">
+        </a>
+      </h1>
+      <nav id="muignb">
+        <input type="button" value="close" class="btn_close">
+        <ul>
+          <li>
+            <mark>SHOP WOMEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="women_NEW.html">NEW 2023</a></li>
+                <li><a href="women_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="women_RTW_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_jackets.html">JACKETS</a></li>
+                <li><a href="women_dresses.html">DRESSES &amp; SKIRTS</a></li>
+                <li><a href="women_shirts.html">SHIRTS &amp; BLOUSES</a></li>
+                <li><a href="women_trousers.html">TROUSERS &amp; SHORTS</a></li>
+                <li><a href="women_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="women_knitwear.html">KNITWEAR</a></li>
+                <li><a href="women_leather.html">LEATHER</a></li>
+                <li><a href="women_jersey.html">JERSEY</a></li>
+                <li><a href="women_denim.html">DENIM</a></li>
+                <li><a href="women_lingerie.html">LINGERIE</a></li>
+              </ol>
+              <ol>
+                <li><strong>BAGS</strong></li>                
+                <li><a href="women_BAG_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_hobobag.html">HOBO &amp; BUCKETS</a></li>
+                <li><a href="women_maxibag.html">MAXI BAGS</a></li>
+                <li><a href="women_totebag.html">TOTE &amp; SHOPPING</a></li>
+                <li><a href="women_clutches.html">CLUTCHES &amp; MINAUDIERES</a></li>
+                <li><a href="women_crossbodybag.html">CROSSBODY BAGS</a></li>
+                <li><a href="women_shoulderbag.html">SHOULDER BAGS</a></li>
+                <li><a href="women_tophandles.html">TOP HANDLES</a></li>
+                <li><a href="women_minibag.html">MINI BAGS</a></li>
+              </ol>
+              <ol>
+                <li><strong>SHOES</strong></li>
+                <li><a href="women_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="women_sandals.html">SANDALS</a></li>
+                <li><a href="women_pumps.html">PUMPS</a></li>
+                <li><a href="women_mules.html">MULES</a></li>
+                <li><a href="women_boots.html">BOOTS &amp; BOOTIES</a></li>
+                <li><a href="women_sneakers.html">SNEAKERS</a></li>
+                <li><a href="women_loafers.html">LOAFERS &amp; BALLERINAS</a></li>
+                <li><a href="women_wedges.html">ESPADRILLES &amp; WEDGES</a></li>
+              </ol>
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>               
+                <li><a href="women_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="women_scarves.html">SCARVES</a></li>
+                <li><a href="women_sunglasses.html">SUNGLASSES</a></li>
+                <li><a href="women_jewelry.html">JEWELLERY</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>SHOP MEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="men_NEW.html">NEW 2023</a></li>
+                <li><a href="men_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="men_RTW_all.html">VIEW ALL</a></li>
+                <li><a href="men_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="men_jackets.html">JACKETS &amp; PANTS</a></li>
+                <li><a href="men_shirts.html">SHIRTS</a></li>
+                <li><a href="men_knitwear.html">KNITWEAR</a></li>
+                <li><a href="men_jersey.html">JERSEY</a></li>
+              </ol>      
+              <ol>
+                <li><strong>BAGS</strong></li>
+                <li><a href="men_BAG_all.html">VIEW ALL</a></li>
+                <li><a href="men_backpacks.html">BACKPACKS</a></li>
+                <li><a href="men_camerabags.html">CAMERA BAGS</a></li>
+                <li><a href="men_messengers.html">MESSENGERS</a></li>
+                <li><a href="men_business.html">BUSINESS</a></li>
+                <li><a href="men_shoppingbags.html">SHOPPING BAGS</a></li>
+                <li><a href="men_trabelbags.html">TRABEL BAGS</a></li>
+              </ol>        
+              <ol>
+                <li><strong>SHOES</strong></li>               
+                <li><a href="men_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="men_boots.html">BOOTS</a></li>
+                <li><a href="men_sneakers.html">SNEAKERS</a></li>
+                <li><a href="men_loafers.html">LOAFERS &amp; DERBIES</a></li>
+                <li><a href="men_sandals.html">ESPADRILLES &amp; SANDALS</a></li>
+              </ol>     
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>
+                <li><a href="men_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="men_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="men_belts.html">BELTS</a></li>
+                <li><a href="men_jewelry.html">JEWELRY</a></li>
+                <li><a href="men_textile.html">TEXTILE ACCESSORIES</a></li>
+                <li><a href="men_sunglasses.html">SUNGLASSES</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>COLLECTIONS</mark>
+            <div class="col_wrap">
+              <div class="quote">
+                <p>"FASHIONS FADE BUT
+                  STYLE IS ETERNAL."</p>
+                <span>BY YVES SAINT LAURENT</span>
+              </div>
+              <ol>
+                <li>
+                  <a href="C01_women_winter23.html">
+                    WOMEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C03_men_winter23.html">
+                    MEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C02_women_summer23.html">
+                    WOMEN'S SUMMER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C04_men_springsummer23.html">
+                    MEN'S SPRING SUMMER 23
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li><mark><a href="sustainability.html">SUSTAINABILITY</a></mark></li>
+          <li><mark><a href="F01_client_service.html">CLIENT SERVICE</a></mark></li>
+        </ul>
+      </nav>
+      <div class="sideicon">
+        <form>
+          <fieldset>
+            <input type="button" value="search" data-panel="searchPanel">
+            <input type="button" value="wishlist" data-panel="wishPanel">
+            <a href="I01_sign_IN.html">my page</a>
+            <input type="button" value="cart" data-panel="cartPanel">
+            <span>+1</span>
+            <input type="button" value="menu" data-panel="muignb">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div class="myorderBox">
+    <div>
+      <h2>ORDER HISTORY</h2>
+      <ul>
+        <li>WELCOME, ROSE</li>
+        <li><a href="index.html">LOG OUT</a></li>
+      </ul>
+      <aside>
+        <a href="I05_myAccount-Detail.html">ACCOUNT DETAILS</a>
+        <a href="I07_myAddress.html">ADDRESS BOOK</a>
+        <a href="I08_myPayment.html">PAYMENT CARDS</a>
+        <a href="I09_myOrder.html" class="currentPage">MY ORDERS</a>
+        <a href="I10_myWishlist.html">WISH LIST</a>
+        <a href="index.html">LOG OUT</a>
+      </aside>
+      <div>
+        <ul>
+          <li><img src="images/myOrder_01.png" alt="Product image purchased"></li>
+          <li>SHIPPING</li>
+          <li>
+            <dl>
+              <dt>BUSTIER DRESS IN CREPE SATIN</dt>
+              <dd>COLOR : BLACK</dd>
+              <dd>SIZE : YSL F42</dd>
+              <dd>STYLE ID 729759Y3G361000</dd>
+            </dl>
+          </li>
+          <li>
+            <ul>
+              <li>BUY ONLINE</li>
+              <li>JUNE 30HT, 2023</li>
+            </ul>
+            <ul>
+              <li>ADDRESS</li>
+              <li>JANNIE KIM</li>
+              <li>1980 JARVISVILLE ROAD, NEW YORK, NY 10011</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>ORDER HISTORY<strong>ESTIMATED DELIVERY DATE : JULY 15TH</strong></li>
+              <li>DELIVERY FEE<strong>$ 0</strong></li>
+              <li>PRODUCT AMOUNT<strong>$ 3,990</strong></li>
+              <li>TOTAL<strong>$ 3,990</strong></li>
+            </ul>
+          </li>
+          <li>
+            <input type="button" value="DELIVERY TRACKING" data-popup="trackingPopup">
+            <input type="button" value="REFUND REQUEST" data-popup="requestPopup">
+          </li>
+        </ul>
+        <ul>
+          <li><img src="images/myOrder_02.png" alt="Product image purchased"></li>
+          <li>SHIPPED</li>
+          <li>
+            <dl>
+              <dt>OPYUM PUMPS IN SUEDE AND RHINESTONES</dt>
+              <dd>COLOR : NOIR</dd>
+              <dd>SIZE : YSL 37</dd>
+              <dd>STYLE ID 578947AAA4Z1012</dd>
+            </dl>
+          </li>
+          <li>
+            <ul>
+              <li>BUY ONLINE</li>
+              <li>JUNE 30HT, 2023</li>
+            </ul>
+            <ul>
+              <li>ADDRESS</li>
+              <li>JANNIE KIM</li>
+              <li>1980 JARVISVILLE ROAD, NEW YORK, NY 10011</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>ORDER HISTORY<strong>JULY 5TH, DELIVERY COMPLETED</strong></li>
+              <li>DELIVERY FEE<strong>$ 0</strong></li>
+              <li>PRODUCT AMOUNT<strong>$ 2,990</strong></li>
+              <li>TOTAL<strong>$ 2,990</strong></li>
+            </ul>
+          </li>
+          <li>
+            <input type="button" value="REFUND REQUEST" data-popup="requestPopup">
+          </li>
+        </ul>
+        <ul>
+          <li><img src="images/myOrder_03.png" alt="Product image purchased"></li>
+          <li>SHIPPED</li>
+          <li>
+            <dl>
+              <dt>KATE CLUTCH IN GRAIN DE POUDRE EMBOSSED LEATHER</dt>
+              <dd>COLOR : BLACK</dd>
+              <dd>SIZE : -</dd>
+              <dd>STYLE ID 326079BOW0J1000</dd>
+            </dl>
+          </li>
+          <li>
+            <ul>
+              <li>BUY ONLINE</li>
+              <li>DECEMBER 25TH, 2022</li>
+            </ul>
+            <ul>
+              <li>ADDRESS</li>
+              <li>JANNIE KIM</li>
+              <li>1980 JARVISVILLE ROAD, NEW YORK, NY 10011</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>ORDER HISTORY<strong>JANUARY 3RD, DELIVERY COMPLETED</strong></li>
+              <li>DELIVERY FEE<strong>$ 0</strong></li>
+              <li>PRODUCT AMOUNT<strong>$ 1,290</strong></li>
+              <li>TOTAL<strong>$ 1,290</strong></li>
+            </ul>
+          </li>
+          <li>
+            <input type="button" value="REFUND REQUEST">
+          </li>
+        </ul>
+      </div>
+      <div id="requestPopup">
+        <form>
+          <fieldset>
+            <h3>REQUEST</h3>
+            <input type="radio" name="selectAddress" id="addressType01" checked>
+            <label for="addressType01">LAST DELIVERY ADDRESS</label>
+            <input type="radio" name="selectAddress" id="addressType02">
+            <label for="addressType02">DIRECT INPUT</label>
+            <input type="button" value="ADDRESS LIST" data-popup="addressListPopup">
+            <dl>
+              <dt>JANNIE KIM</dt>
+              <dd>1980 JARVISVILLE ROAD, NEW YORK</dd>
+              <dd>NY 10011</dd>
+            </dl>
+            <label for="reason">REASON FOR RETURN</label>
+            <select id="reason">
+              <option>SELECT...</option>
+              <option>SIMPLE REMORSE</option>
+              <option>QUALITY DISSATISFACTION</option>
+              <option>DAMAGE AND PRODUCT DEFECTS</option>
+              <option>WRONG DELIVERY</option>
+              <option>DELIVERY DELAY</option>
+              <option>BUY MULTIPLE PRODUCTS</option>
+            </select>
+            <input type="button" value="CANCEL" class="btn_close">
+            <input type="submit" value="REQUEST">
+            <input type="button" value="cancel" class="btn_close">
+          </fieldset>
+        </form>
+      </div>   
+      <div id="addressListPopup">
+        <form>
+          <input type="radio" name="addressList" id="address01" checked>
+          <label for="address01">HOME</label>
+          <dl>
+            <dt>JANNIE KIM</dt>
+            <dd>9657 WILSHIRE BLVD BEVERLY HILLS</dd>
+            <dd>CA 90212-2306</dd>
+          </dl>
+          <input type="radio" name="addressList" id="address02">
+          <label for="address02">HOME2</label>
+          <dl>
+            <dt>ROSEANNE KIM</dt>
+            <dd>9801 SUNSET BLVD BEVERLY HILLS</dd>
+            <dd>CA 90210-1466</dd>
+          </dl>
+          <input type="submit" value="CHECK" class="btn_close">
+          <input type="button" value="cancel" class="btn_close">
+        </form>
+      </div>
+      <div id="trackingPopup">
+        <h4>TRACK YOUR ORDER</h4>
+        <ol>
+          <li><strong>ORDERED</strong>JULY 5TH 09 : 17</li>
+          <li><strong>ORDER CONFIRMED</strong>JULY 5TH 12 : 10</li>
+          <li><strong>ORDER SHIPPED</strong>JULY 6TH</li>
+          <li><strong>DELIVERED</strong></li>
+        </ol>
+        <input type="button" value="cancel" class="btn_close">
+      </div>
+    </div>
+  </div>
+  <div>
+    <ul>
+      <li data-product="mayLike" class="activated">YOU MAY ALSO LIKE</li>
+      <li data-product="recentView">RECENTLY VIEWED</li>
+    </ul>
+    <div id="mayLike" class="activated">
+      <ul>
+        <li>
+          <img src="images/userMAYlike_05.png" alt="product image">
+          <dl>
+            <dt><a href="wNEW_07-1.html">LARGE PANTS IN CREPE SATIN</a></dt>
+            <dd>$ 2,190</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="images/userMAYlike_06.png" alt="product image">
+          <dl>
+            <dt><a href="wNEW_09-2.html">KATE SMALL CHAIN BAG IN GRAIN DE POUDRE EMBOSSED 
+              LEATHER</a></dt>
+            <dd>$ 2,100</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="images/userMAYlike_07.png" alt="product image">
+          <dl>
+            <dt><a href="wNEW_10.html">SOLFERINO SMALL SATCHEL IN QUILTED NUBUCK SUEDE</a></dt>
+            <dd>$ 3,200</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="images/userMAYlike_08.png" alt="product image">
+          <dl>
+            <dt><a href="wSHOES_06.html">CASSANDRA SANDALS IN PATENT LEATHER</a></dt>
+            <dd>$ 1,290</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div id="recentView">
+      <ul>
+        <li>
+          <img src="images/userMAYlike_40.png" alt="product image">
+          <dl>
+            <dt><a href="wACC_14-1.html">SL M119 BLAZE</a></dt>
+            <dd>$ 960</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="images/userMAYlike_18.png" alt="product image">
+          <dl>
+            <dt><a href="wRTW_06.html">VENICE JEANS IN DEEP BLUE RINSE DENIM</a></dt>
+            <dd>$ 890</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="images/userMAYlike_24.png" alt="product image">
+          <dl>
+            <dt><a href="wBAG_32-1.html">GABY ZIPPED POUCH IN QUILTED LAMBSKIN</a></dt>
+            <dd>$ 1,290</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="images/userMAYlike_55.png" alt="product image">
+          <dl>
+            <dt><a href="wBAG_03-1.html">COLLEGE LARGE CHAIN BAG IN QUILTED LEATHER</a></dt>
+            <dd>$ 2,990</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <h2>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="Thank you for visiting Saint Laurent">
+        </a>
+      </h2>
+      <ul>
+        <li><a href="F01_client_service.html">CLIENT SERVICE</a></li>
+        <li><a href="F03_track_order.html">TRACK ORDER</a></li>
+        <li><a href="F02_email.html">EMAIL</a></li>
+        <li><a href="F04_store_locator.html">STORE LOCATOR</a></li>
+        <li><a href="L06_legal_notice.html">LEGAL NOTICES</a></li>
+        <li>
+          <input type="button" value="SUBSCRIBE TO THE NEWSLETTER" data-panel="newsPanel">
+        </li>
+      </ul>
+    </div>
+    <div id="newsPanel">
+      <input type="button" value="close" class="btn_close">
+      <h2>NEWSLETTER</h2>
+      <p>SUBSCRIBE TO THE SAINT LAURENT NEWSLETTER TO RECEIVE 
+        EXCLUSIVE INFORMATION ON NEW COLLECTIONS, FASHION 
+        SHOWS AND EVENTS.</p>
+      <span>REQUIRED FIELD</span>
+      <form>
+        <label>CIVILITY</label>
+        <select>
+          <option>PLEASE SELECT</option>
+          <option>MISS, MRS, MS</option>
+          <option>MR.</option>
+          <option>MX</option>
+          <option>I'D RATHER NOT SAY</option>
+        </select>
+        <label>EMAIL</label>
+        <input type="email" placeholder="EMAIL" required>
+        <input type="submit" value="SEND" class="btn_send">
+      </form>
+      <p>BY SIGNING UP BELOW, YOU AGREE TO STAY IN TOUCH WITH SAINT LAURENT. 
+        WE WILL USE YOUR PERSONAL INFORMATION TO PROVIDE YOU WITH 
+        TAILORED UPDATES ABOUT OUR ACTIVITIES, PRODUCTS AND SERVICES. FOR 
+        MORE INFORMATION ABOUT OUR PRIVACY PRACTICES AND YOUR RIGHTS, 
+        PLEASE CONSULT OUR PRIVACY POLICY.</p>
+    </div>
+    <div>
+      <span>© KERING 2019</span>
+      <div class="snsArea">
+        <ul>
+          <li><a href="https://pf.kakao.com/_rAMaxb">YSL kakaotalk</a></li>
+          <li><a href="https://www.facebook.com/ysl">YSL facebook</a></li>
+          <li><a href="https://www.twitter.com/ysl">YSL twitter</a></li>
+          <li><a href="https://www.instagram.com/ysl/">YSL instagram</a></li>
+          <li><a href="https://www.youtube.com/ysl">YSL youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

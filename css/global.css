@@ -1,0 +1,1560 @@
+body{
+    font-family: 'Josefin Sans'; cursor: default;
+}
+header > .panel > #wishPanel strong,
+header > .panel > #cartPanel strong,
+section.listContainer > ul > li > dl dd,
+.detailContainer > aside > dl > dd strong,
+.detailContainer > div > div > ul > li dl dd,
+.pager,
+.mywishListBox > div > ul:last-of-type li dl dd:first-of-type,
+.mycartBox > div > ul:nth-of-type(2) li strong,
+.mycartBox > div > aside > div:first-child > span > b > strong,
+.myorderBox > div > div > ul > li:nth-child(5) > ul:last-child,
+.myPaymentBox > div > div > form fieldset div select,
+.myPaymentBox > div > ul:last-of-type > li > dl,
+section.ck_shippingTab > div > aside > ul > li > dl > dd:last-child,
+section.ck_shippingTab > div > aside > span > b > strong,
+.sizeGuide > table > tbody > tr
+{
+    font-family: 'Sen';
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input,
+select{
+    font-family: inherit;
+}
+
+@media screen and (max-width:767px){
+    [id*='Panel']{
+        display: none; background-color: #f0f0f0; z-index: 10;
+        box-shadow: 3px 3px 8px #232323;
+    }
+    [id="muignb"],
+    .detailContainer > ul:first-of-type{display: none;}
+    .active{
+        display: block;
+    }
+    [class*='collectionbox'],
+    ul.looksLink,
+    [class*='Container'],
+    [class*='Box'],
+    [class*='Tab'],
+    [class*='_Area'],
+    [class*='lookBook_']{
+        padding-top: 60px;
+    }
+    [class*='Tab']{
+        margin-bottom: 30px;
+    }
+    header > .panel > #searchPanel{
+        width: 100%; padding: 60px 20px 20px;
+        position: absolute; left: 0; top: 60px; box-sizing: border-box;
+    }
+    header > .panel > #searchPanel input[type='button']{
+        position: absolute; background-color: transparent;
+        border: none; box-shadow: none; width: 17px; text-indent: -9999px;
+        background-image: url('../images/icon_close.png');
+        background-repeat: no-repeat; background-size: 14px;
+        right: 30px; top: 30px;
+    }
+    header > .panel > #searchPanel input[type='search']{
+        background-color: transparent; box-shadow: none; border: none;
+        display: block; width: 100%;
+        font-size: 20px; color: #232323; font-weight: 400;
+        padding: 0 20px; line-height: 26px;
+        border-bottom: 1px solid #232323;
+        background-image: url('../images/icon_search_enter.png');
+        background-repeat: no-repeat; background-size: 14px;
+        background-position: left center;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    header > .panel > #searchPanel input[type='search']::placeholder{
+        font-size: 15px; color: #a5a5a5;
+    }
+    header > .panel > #searchPanel h2{
+        font-size: 15px; display: inline-block;
+        color: #232323; font-weight: 400;
+        line-height: 30px;
+    }
+    header > .panel > #searchPanel ul li{
+        font-size: 14px; line-height: 25px;
+    }
+    header > .panel > #searchPanel ul li a{
+        color: #232323; font-weight: 300; text-decoration: underline;
+    }
+    header > .panel >*:not(#searchPanel){
+        width: 100%; position: absolute; left: 0; top: 60px;
+    }
+    header > .panel >*:not(#searchPanel) h2{
+        font-size: 17px; font-weight: 600; color: #232323; text-align: center;
+        line-height: 94px; border-bottom: 1px solid #a5a5a5; box-sizing: border-box; margin-bottom: 20px; 
+    }
+    header > .panel >*:not(#searchPanel) ul:not(strong) {
+        padding: 0 20px; font-size: 12px; color: #232323; max-height: 330px; overflow-y: auto;
+    }
+    header > .panel >*:not(#searchPanel) ul li{
+        margin-bottom: 20px; border-bottom: 1px solid #a5a5a5; padding: 0 0 25px 100px; background-repeat: no-repeat; background-size: 80px 112px;
+        background-position: left top;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd strong{
+        font-size: 13px; font-weight: 400; color: #000;
+    }
+    header > .panel > #wishPanel ul li:first-of-type{
+        background-image: url('../images/myWishlist_01.png');
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dt{
+        font-weight: 500; line-height: 18px; margin-bottom: 60px; padding-right: 15px; box-sizing: border-box;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd{
+        font-weight: 300;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd:first-of-type{
+        margin-bottom: 10px;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd:not(:first-of-type){
+        display: inline-block;
+    }
+    header > .panel >*:not(#searchPanel) li dl dd:last-of-type{
+        float: right;
+    }
+    header > .panel >*:not(#searchPanel) > ul.deactive{
+        display: none;
+    }
+    header > .panel >*:not(#searchPanel) > p{
+        display: none; text-align: center; margin-bottom: 30px;
+        font-size: 16px; color: #232323;
+    }
+    header > .panel >*:not(#searchPanel) > p.active{
+        display: block;
+    }
+    header > .panel >*:not(#searchPanel) > div{
+        padding: 20px;
+        border-top: 1px solid #a5a5a5;
+    }
+    header > .panel >*:not(#searchPanel) div a[class*='btn']{
+        text-align: center; margin: 0 auto; display: block;
+        font-size: 15px; font-weight: 500; color: #232323;
+        width: 200px; line-height: 50px; border: 1px solid #232323;
+        box-sizing: border-box;
+    }
+    header > .panel >*:not(#searchPanel) div a[class*='btn'].active{
+        background-color: #232323; color: #fff;
+    }
+    header > .panel >*:not(#searchPanel) ul li{
+        position: relative;
+    }
+    header > .panel >*:not(#searchPanel) ul li input[type='button']{
+        width: 15px; line-height: 17px;
+        position: absolute; top: 0; right: 0; background-image: url('../images/icon_delete.png'); background-repeat: no-repeat;
+        text-indent: -9999px;
+        box-shadow: none; border: none; background-color: transparent;
+    }
+    header > .panel > #cartPanel ul li:first-of-type{
+        background-image: url('../images/cart_01.png');
+    }
+    header > .panel > #cartPanel div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > .panel > #cartPanel div mark{
+        background-color: transparent; font-style: normal;
+        font-size: 13px; font-weight: 500; margin-bottom: 20px; display: inline-block;
+    }
+    header > .panel > #cartPanel div strong{
+        font-size: 15px; float: right;
+    }
+    header{
+        width: 100%;
+        position: fixed; z-index: 100; top: 0; left: 0;
+    }
+    header > .banner{
+        display: none;
+    }
+    header > .wrap{
+        position: relative; background-color: #f4f4f4; width: 100%;
+        height: 60px;
+    }
+    header:not(.transparentbg) > .wrap{
+        background-color: #fff;
+    }
+    header > .wrap h1{
+        line-height: 1.71vw; width: 16.61%;
+        left: 2.86%; position: absolute; top: 40%;
+        background-image: url('../images/logo_black.png');
+        background-repeat: no-repeat;
+        text-indent: -9999px; background-size: contain;
+        min-width: 110px;
+    }
+    header > .wrap h1 a{
+        display: block;
+    }
+    header > .wrap h1 a img{
+        width: 100%; max-width: 319px;
+    }
+
+    header > .wrap nav{
+        width: 100%; background-color: #f4f4f4;
+        position: absolute; right: 0; top: 0;
+        z-index: 10; padding: 30px 15px; box-sizing: border-box; box-shadow: 3px 3px 8px #232323;
+        overflow-y: scroll; height: 500px;
+    }
+    header > .wrap nav > input[type='button']{
+        position: absolute; background-color: transparent;
+        border: none; box-shadow: none; width: 17px; text-indent: -9999px;
+        background-image: url('../images/icon_close.png');
+        background-repeat: no-repeat; background-size: 14px;
+        right: 15px; top: 30px;
+    }
+    header > .wrap nav ul > li{
+        padding: 0 15px;
+    }
+    header > .wrap nav ul > li:first-child{
+        margin-top: 50px; 
+    }
+    header > .wrap nav ul > li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    header > .wrap nav ul li{
+        margin-bottom: 20px;
+    }
+    header > .wrap nav ul li mark{
+        display: block;
+        font-size: 15px; font-weight: 600; color: #232323; background-color: transparent; font-style: normal; position: relative; margin-bottom: 20px;
+    }
+    header > .wrap nav ul li mark.active+.gnb_wrap,
+    header > .wrap nav ul li mark.active+.col_wrap{
+        display: block; 
+    }
+    header > .wrap nav ul li:not(:nth-child(4)):not(:nth-child(5)) mark:after{
+        content: url('../images/icon_more_arrow.png');
+        position: absolute;
+        right: 0; top: 0;
+        transition-duration: 0.75s;
+    }
+    header > .wrap nav ul li:not(:nth-child(4)):not(:nth-child(5)) mark.active:after{
+        transform: rotate(-180deg);
+    }
+    header > .wrap nav ul li mark a{
+        display: block; color: #232323; padding: 0;
+    }
+    header > .wrap nav ul li .gnb_wrap{
+        display: none; 
+        padding: 0 15px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(:last-child){
+        display: block; margin-bottom: 25px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol.style{
+        font-size: 14px; font-weight: 500;
+    }
+    header > .wrap nav ul li .gnb_wrap ol li:first-child{
+        margin-bottom: 15px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol.style li a{
+        color: #232323;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li strong{
+        font-size: 14px; font-weight: 600; color: #232323; display: inline-block; position: relative;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) :not(:first-child){
+        display: none; padding-left: 30px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) :first-child.active~li{
+        display: block; 
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li strong:after{
+        content: url("../images/icon_more2_arrow.png");
+        position: absolute; top: 0; right: -15px;
+        transition-duration: 0.75s;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li strong.active:after{
+        transform: rotate(-180deg);
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li a,
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li a{
+        color: #232323; font-size: 13px; font-weight: 400;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap{
+        display: none; padding: 0 30px;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap .quote{
+        display: none;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li{
+        margin-top: 20px;
+    }
+
+    header > .wrap > div{
+        box-sizing: border-box; position: absolute; right: 2.86%; width: 50%; top: 33%; text-align: right;
+    }
+    header > .wrap > div form fieldset > *{
+        padding: 0; border: none; box-shadow: none; display: inline-block;
+        text-indent: -9999px; text-align: left;
+        border: none; background-color: transparent;
+        background-repeat: no-repeat; width: 18px; line-height: 21px; background-position: center bottom;
+        background-size: contain;
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(1){
+        background-image: url('../images/icon_search_black.png');
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(2){
+        background-image: url('../images/icon_wish_black.png');
+    }
+    header > .wrap > div form fieldset a{
+        background-image: url('../images/icon_mypage_black.png');
+        display: inline-block; 
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(3){
+        background-image: url('../images/icon_bags_black.png');
+    }
+    header > .wrap > div form fieldset span{
+        display: none;
+    } 
+    header > .wrap > div form fieldset input[type='button']:not(:first-child),
+    header > .wrap > div form fieldset a{
+        margin-left: 5px;
+    }
+    header > .wrap > div form fieldset :last-child{
+        background-image: url('../images/icon_mui_black.png');
+        background-position: center bottom 2px;
+    }
+
+    footer{
+        background-color: #232323; position: relative;
+    }
+    footer > div:first-child,
+    footer > div:last-child{
+        width: 88.02%; margin: 0 auto;
+    }
+    footer > div:first-child{
+        padding: 15px 0; box-sizing: border-box;
+        border-bottom: 1px solid #a5a5a5;
+    }
+    footer > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child h2{
+        max-width: 319px; line-height: 1.71vw; width: 16.61%; float: left;
+        min-width: 100px;
+    }
+    footer > div:first-child h2 a{
+        display: block;
+    }
+    footer > div:first-child h2 a img{
+        width: 100%;
+    }
+    footer > div:first-child ul{
+        width: 100%;
+    }
+    footer > div:first-child ul li{
+        font-size: 12px; font-weight: 500; text-align: right;
+    }
+    footer > div:first-child ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    footer > div:first-child ul li a{
+        color: #e4e4e4; display: block;
+    }
+    footer > div:first-child ul li:last-child input[type='button']{
+        padding-right: 15px;
+        background-image: url('../images/arrow_newletter.png'); background-repeat: no-repeat; background-color: transparent; box-sizing: border-box; border: none; box-shadow: none; background-position: right 0.1vw;
+        background-size: contain;
+        font-size: 12px;  font-weight: 500;
+        color: #e4e4e4; display: inline-block;
+    }
+    footer #newsPanel{
+        position: absolute; width: 100%; right: 0;
+        bottom: 0; padding: 30px 20px; box-sizing: border-box;
+    }
+    footer #newsPanel h2{
+        font-size: 25px; font-weight: 600; color: #232323; margin-bottom: 15px;
+    }
+    footer #newsPanel p:first-of-type,
+    footer #newsPanel span{
+        font-size: 16px; font-weight: 400; color: #232323; line-height: 22px;
+    }
+    footer #newsPanel p:first-of-type{
+        margin-bottom: 15px;
+    }
+    footer #newsPanel p:last-of-type{
+        font-size: 14px; font-weight: 300; color: #a5a5a5; line-height: 20px; margin-top: 20px;
+    }
+    footer #newsPanel span{
+        margin-bottom: 10px; padding: 5px 15px 0 0; background-image: url('../images/icon_star.png'); background-repeat: no-repeat; background-position: right top;
+        display: inline-block;
+    }
+    footer #newsPanel form label{
+        font-size: 18px; font-weight: 600; color: #232323;
+        padding: 5px 15px 0 0; background-image: url('../images/icon_star.png'); background-repeat: no-repeat; background-position: right top; margin-bottom: 10px; display: inline-block;
+    }
+    footer #newsPanel form select{
+        width: 100%; padding: 18px 15px; border: 1px solid #454545;
+        margin-bottom: 15px;
+    }
+    footer #newsPanel form select option:first-child{
+        color: #a5a5a5;
+    }
+    footer #newsPanel form select option:not(:first-child){
+        color: #232323;
+    }
+    footer #newsPanel form input[type='email']{
+        width: 100%; display: block; border: 1px solid #454545; line-height: 50px; padding: 0 15px; margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+    footer #newsPanel form input[type='email']::placeholder{
+        color: #a5a5a5; font-size: 18px; font-weight: 300;
+    }
+    footer #newsPanel form input[type='submit']{
+        display: block; font-size: 25px; font-weight: 500; width: 100%;
+        padding: 18px 0; background-color: #232323; color: #fff;
+    }
+    footer #newsPanel input[type='button']{
+        position: absolute; right: 4.16vw; top: 3.12vw; text-indent: -9999px;
+        background-color: transparent; border: none; box-shadow: none;
+        background-image: url('../images/icon_close.png');
+        width: 17px; line-height: 17px; background-repeat: no-repeat;
+    }
+    footer > div:last-child{
+        padding: 15px 0;
+    }
+    footer > div:last-child span{
+        font-size: 11px; font-weight: 400; color: #e4e4e4;
+        line-height: 16px;
+    }
+    footer > div:last-child .snsArea{
+        position: relative;
+    }
+    footer > div:last-child .snsArea ul{
+        position: absolute; right: 0; top: -16px;
+    }
+    footer > div:last-child .snsArea ul li{
+        background-repeat: no-repeat; background-position: center; background-size: contain; width: 16px; line-height: 16px; text-indent: -9999px;
+        display: inline-block; margin-left: 1.97vw; background-size: contain;
+    }
+    footer > div:last-child .snsArea ul li a{
+        display: block;
+    }
+    footer > div:last-child .snsArea ul li:first-child{background-image: url('../images/icon_sns_01.png');}
+    footer > div:last-child .snsArea ul li:nth-child(2){background-image: url('../images/icon_sns_02.png');}
+    footer > div:last-child .snsArea ul li:nth-child(3){background-image: url('../images/icon_sns_03.png');}
+    footer > div:last-child .snsArea ul li:nth-child(4){background-image: url('../images/icon_sns_04.png');}
+    footer > div:last-child .snsArea ul li:nth-child(5){background-image: url('../images/icon_sns_05.png');}
+
+    .pager{
+        width: 90%; margin: 0 auto;
+        position: relative; max-width: 380px;
+    }
+    .pager > a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        width: 10px; line-height: 20px;
+        position: absolute; top: 5px; background-size: contain;
+    }
+    .pager > a:first-of-type{
+        background-image: url('../images/icon_pager_left.png'); left: 0;
+        background-position: left center;
+    }
+    .pager > a:last-of-type{
+        background-image: url('../images/icon_pager_right.png'); right: 0;
+        background-position: right center;
+    }
+    .pager ol{
+        text-align: center; padding: 0 10% 50px;
+        box-sizing: border-box;
+    }
+    .pager ol li{
+        font-size: 14px; width: 30px; line-height: 30px;
+        margin: 0 auto; display: inline-block;
+    }
+    .pager ol li:not(:first-child){
+        margin-left: 10%;
+    }
+    .pager ol li a{
+        color: #656565; display: block;
+    }
+    .pager ol li.active{
+        width: 30px; line-height: 30px; background-color: #232323;
+        border-radius: 4px; font-size: 16px;
+    }
+    .pager ol li.active a{
+        color: #f4f4f4; display: block;
+    }
+    nav.smallMenu{
+        margin-bottom: 20px;
+    }
+    nav.smallMenu ol{
+        padding-left: 20px;
+    }  
+    nav.smallMenu{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1279px){
+    [id*='Panel']{
+        display: none; background-color: #f0f0f0; z-index: 10;
+        box-shadow: 3px 3px 8px #656565;
+    }
+    [id="muignb"],
+    .detailContainer > .bx-wrapper,
+    .detailContainer > [class*='mobile_']{display: none;}
+    .active{
+        display: block;
+    }
+    [class*='collectionbox'],
+    ul.looksLink,
+    [class*='Container'],
+    [class*='Box'],
+    [class*='Tab'],
+    [class*='_Area'],
+    [class*='lookBook_']{
+        padding-top: 12.5vw; 
+    }
+    [class*='Tab']{
+        margin-bottom: 50px;
+    }
+    header > .panel > #searchPanel{
+        width: 100%; padding: 105px 115px 70px;
+        position: absolute; left: 0; top: 10.15vw; box-sizing: border-box;
+    }
+    header > .panel > #searchPanel input[type='button']{
+        position: absolute; background-color: transparent;
+        border: none; box-shadow: none; width: 17px; text-indent: -9999px;
+        background-image: url('../images/icon_close.png');
+        background-repeat: no-repeat; background-size: 17px;
+        right: 30px; top: 30px; background-position: center;
+    }
+    header > .panel > #searchPanel input[type='search']{
+        background-color: transparent; box-shadow: none; border: none;
+        display: block; width: 100%;
+        font-size: 20px; color: #232323; font-weight: 400;
+        padding: 0 45px; line-height: 40px;
+        border-bottom: 1px solid #232323;
+        background-image: url('../images/icon_search_enter.png');
+        background-repeat: no-repeat; background-size: 28px;
+        background-position: left 0 bottom 6px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    header > .panel > #searchPanel input[type='search']::placeholder{
+        font-size: 15px; color: #a5a5a5;
+    }
+    header > .panel > #searchPanel h2{
+        padding: 0 40px 0 45px; font-size: 18px; display: inline-block;
+        color: #232323; font-weight: 400; vertical-align: top;
+        line-height: 30px;
+    }
+    header > .panel > #searchPanel ul{
+        display: inline-block;
+    }
+    header > .panel > #searchPanel ul li{
+        font-size: 18px; line-height: 30px;
+    }
+    header > .panel > #searchPanel ul li a{
+        color: #232323; font-weight: 300; text-decoration: underline;
+    }
+    header > .panel >*:not(#searchPanel){
+        width: 75%; position: absolute; right: 2.86vw; top: 10.15vw;
+    }
+    header > .panel >*:not(#searchPanel) h2{
+        font-size: 17px; font-weight: 600; color: #232323; text-align: center;
+        line-height: 94px; border-bottom: 1px solid #a5a5a5; box-sizing: border-box; margin-bottom: 20px; 
+    }
+    header > .panel >*:not(#searchPanel) ul:not(strong) {
+        padding: 0 20px; font-size: 12px; color: #232323; overflow-y: auto; max-height: 330px;
+    }
+    header > .panel >*:not(#searchPanel) ul li{
+        margin-bottom: 20px; border-bottom: 1px solid #a5a5a5; padding: 0 0 25px 100px; background-repeat: no-repeat; background-size: 80px 112px;
+        background-position: left top;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd strong{
+        font-size: 13px; font-weight: 400; color: #000;
+    }
+    header > .panel > #wishPanel ul li:first-of-type{
+        background-image: url('../images/myWishlist_01.png');
+    }
+    header > .panel >*:not(#searchPanel) ul li dl:after{
+        content: ''; display: block; clear: both;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dt{
+        font-weight: 500; line-height: 18px; margin-bottom: 60px; padding-right: 20px; box-sizing: border-box;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd{
+        font-weight: 300;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd:first-of-type{
+        margin-bottom: 10px;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd:not(:first-of-type){
+        display: inline-block;
+    }
+    header > .panel >*:not(#searchPanel) li dl dd:last-of-type{
+        float: right;
+    }
+    header > .panel >*:not(#searchPanel) > ul.deactive{
+        display: none;
+    }
+    header > .panel >*:not(#searchPanel) > p{
+        display: none; text-align: center; margin-bottom: 30px;
+        font-size: 16px; color: #232323;
+    }
+    header > .panel >*:not(#searchPanel) > p.active{
+        display: block;
+    }
+    header > .panel >*:not(#searchPanel) > div{
+        padding: 20px;
+        border-top: 1px solid #a5a5a5;
+    }
+    header > .panel >*:not(#searchPanel) div a[class*='btn']{
+        text-align: center; margin: 0 auto; display: block;
+        font-size: 15px; font-weight: 500; color: #232323;
+        width: 360px; line-height: 50px; border: 1px solid #232323;
+        box-sizing: border-box;
+        transition-duration: 0.35s;
+    }
+    header > .panel >*:not(#searchPanel) div a[class*='btn'].active{
+        background-color: #232323; color: #fff;
+    }
+    header > .panel > :not(#searchPanel) ul li{
+        position: relative;
+    }
+    header > .panel >*:not(#searchPanel) ul li input[type='button']{
+        width: 15px; line-height: 17px;
+        position: absolute; top: 0; right: 0; background-image: url('../images/icon_delete.png'); background-repeat: no-repeat;
+        text-indent: -9999px;
+        box-shadow: none; border: none; background-color: transparent;
+    }
+    header > .panel > #cartPanel ul li:first-of-type{
+        background-image: url('../images/cart_01.png');
+    }
+    header > .panel > #cartPanel div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > .panel > #cartPanel div mark{
+        background-color: transparent; font-style: normal;
+        font-size: 13px; font-weight: 500; margin-bottom: 20px; display: inline-block;
+    }
+    header > .panel > #cartPanel div strong{
+        font-size: 15px; float: right;
+    }
+
+    header{
+        width: 100%;
+        position: fixed; z-index: 100; top: 0; left: 0;
+        transition-duration: 0.35s;
+    }
+    header > .banner{
+        background-color: #232323; text-align: center; padding: 0 5%;
+    }
+    header > .banner a{
+        color: #f4f4f4; font-size: 0.62vw; font-weight: 600; 
+        text-decoration: none; line-height: 2.08vw;
+    }
+    header > .wrap{
+        position: relative; background-color: #f4f4f4; width: 100%;
+        height: 10.02vw;
+    }
+    header:not(.transparentbg) > .wrap{
+        background-color: #fff;
+    }
+    header > .wrap h1{
+        line-height: 1.71vw; width: 16.61%; min-width: 200px;
+        left: 2.86%; position: absolute; top: 4.16vw;
+        background-image: url('../images/logo_black.png');
+        background-repeat: no-repeat;
+        text-indent: -9999px; background-size: contain;
+    }
+    header > .wrap h1 a{
+        display: block;
+    }
+    header > .wrap h1 a img{
+        width: 100%; max-width: 319px;
+    }
+
+    header > .wrap nav{
+        width: 100%; background-color: #f4f4f4;
+        position: absolute; right: 0; top: 0;
+        z-index: 10; padding: 30px 50px; box-sizing: border-box; box-shadow: 3px 3px 8px #656565;
+        overflow-y: scroll; height: 500px;
+    }
+    header > .wrap nav > input[type='button']{
+        position: absolute; background-color: transparent;
+        border: none; box-shadow: none; width: 17px; text-indent: -9999px;
+        background-image: url('../images/icon_close.png');
+        background-repeat: no-repeat; background-size: 14px;
+        right: 15px; top: 30px;
+    }
+    header > .wrap nav ul > li{
+        padding: 0 15px;
+    }
+    header > .wrap nav ul > li:first-child{
+        margin-top: 50px; 
+    }
+    header > .wrap nav ul > li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    header > .wrap nav ul li{
+        margin-bottom: 20px;
+    }
+
+    header > .wrap nav ul li mark{
+        display: block;
+        font-size: 15px; font-weight: 600; color: #232323; background-color: transparent; font-style: normal; position: relative; margin-bottom: 20px;
+    }
+    header > .wrap nav ul li mark.active+.gnb_wrap,
+    header > .wrap nav ul li mark.active+.col_wrap{
+        display: block; 
+    }
+    header > .wrap nav ul li:not(:nth-child(4)):not(:nth-child(5)) mark:after{
+        content: url('../images/icon_more_arrow.png');
+        position: absolute;
+        right: 0; top: 0;
+        transition-duration: 0.75s;
+    }
+    header > .wrap nav ul li:not(:nth-child(4)):not(:nth-child(5)) mark.active:after{
+        transform: rotate(-180deg);
+    }
+    header > .wrap nav ul li mark a{
+        display: block; color: #232323; padding: 0;
+    }
+    header > .wrap nav ul li .gnb_wrap{
+        display: none; 
+        padding: 0 30px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(:last-child){
+        display: block; margin-bottom: 25px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol.style{
+        font-size: 14px; font-weight: 500;
+    }
+    header > .wrap nav ul li .gnb_wrap ol li:first-child{
+        margin-bottom: 15px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol.style li a{
+        color: #232323;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li strong{
+        font-size: 14px; font-weight: 600; color: #232323; display: inline-block; position: relative;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) :not(:first-child){
+        display: none; padding-left: 30px;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) :first-child.active~li{
+        display: block; 
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li strong:after{
+        content: url("../images/icon_more2_arrow.png");
+        position: absolute;
+        top: 0; right: -15px;
+        transition-duration: 0.75s;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li strong.active:after{
+        transform: rotate(-180deg);
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li a,
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li a{
+        color: #232323; font-size: 13px; font-weight: 400;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap{
+        display: none; padding: 0 30px;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap .quote{
+        display: none;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li{
+        margin-top: 20px;
+    }
+    header > .wrap > div{
+        box-sizing: border-box; position: absolute; right: 2.86%; width: 35%; padding: 0; top: 33%; text-align: right;
+    }
+    header > .wrap > div form fieldset > *{
+        padding: 0; border: none; box-shadow: none; display: inline-block; position: relative;
+        text-indent: -9999px; text-align: left;
+        border: none; background-color: transparent;
+        background-repeat: no-repeat; width: 32px; line-height: 35px; background-position: center bottom;
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(1){
+        background-image: url('../images/icon_search_black.png');
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(2){
+        background-image: url('../images/icon_wish_black.png');
+    }
+    header > .wrap > div form fieldset a{
+        background-image: url('../images/icon_mypage_black.png');
+        display: inline-block;
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(3){
+        background-image: url('../images/icon_bags_black.png');
+    }
+    header > .wrap > div form fieldset span{
+        display: none;
+    } 
+    header > .wrap > div form fieldset input[type='button']:not(:first-child),
+    header > .wrap > div form fieldset a{
+        margin-left: 6.61%;
+    }
+    header > .wrap > div form fieldset :last-child{
+        background-image: url('../images/icon_mui_black.png');
+        background-position: center bottom 5px;
+    }
+    footer{
+        background-color: #232323; position: relative;
+    }
+    footer > div:first-child,
+    footer > div:last-child{
+        width: 88.02%; margin: 0 auto;
+    }
+    footer > div:first-child{
+        padding: 4.16vw 0 2.08vw; box-sizing: border-box;
+        border-bottom: 1px solid #a5a5a5;
+    }
+    footer > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child h2{
+        max-width: 319px; line-height: 1.71vw; width: 16.61%; margin-bottom: 4.16vw; float: left;
+        min-width: 150px;
+    }
+    footer > div:first-child h2 a{
+        display: block;
+    }
+    footer > div:first-child h2 a img{
+        width: 100%;
+    }
+    footer > div:first-child ul{
+        width: 100%;
+    }
+    footer > div:first-child ul li{
+        font-size: 15px; font-weight: 500; text-align: right;
+    }
+    footer > div:first-child ul li:not(:last-child){
+        margin-bottom: 1.04vw;
+    }
+    footer > div:first-child ul li a{
+        color: #e4e4e4; display: block;
+    }
+    footer > div:first-child ul li:last-child input[type='button']{
+        padding-right: 20px;
+        background-image: url('../images/arrow_newletter.png'); background-repeat: no-repeat; background-color: transparent; box-sizing: border-box; border: none; box-shadow: none; background-position: right 0.1vw;
+        background-size: contain;
+        font-size: 15px;  font-weight: 500;
+        color: #e4e4e4; display: inline-block;
+    }
+    footer #newsPanel{
+        position: absolute; width: 710px; right: 0;
+        bottom: 0; padding: 60px 80px; box-sizing: border-box;
+    }
+    footer #newsPanel h2{
+        font-size: 25px; font-weight: 600; color: #232323; margin-bottom: 40px;
+    }
+    footer #newsPanel p:first-of-type,
+    footer #newsPanel span{
+        font-size: 16px; font-weight: 400; color: #232323; line-height: 22px;
+    }
+    footer #newsPanel p:first-of-type{
+        margin-bottom: 40px;
+    }
+    footer #newsPanel p:last-of-type{
+        font-size: 14px; font-weight: 300; color: #a5a5a5; line-height: 20px; margin-top: 20px;
+    }
+    footer #newsPanel span{
+        margin-bottom: 25px; padding: 5px 15px 0 0; background-image: url('../images/icon_star.png'); background-repeat: no-repeat; background-position: right top;
+        display: inline-block;
+    }
+    footer #newsPanel form label{
+        font-size: 18px; font-weight: 600; color: #232323;
+        padding: 5px 15px 0 0; background-image: url('../images/icon_star.png'); background-repeat: no-repeat; background-position: right top; margin-bottom: 10px; display: inline-block;
+    }
+    footer #newsPanel form select{
+        width: 100%; padding: 18px 15px; border: 1px solid #454545;
+        margin-bottom: 30px;
+    }
+    footer #newsPanel form select option:first-child{
+        color: #a5a5a5;
+    }
+    footer #newsPanel form select option:not(:first-child){
+        color: #232323;
+    }
+    footer #newsPanel form input[type='email']{
+        width: 100%; display: block; border: 1px solid #454545; line-height: 50px; padding: 0 15px; margin-bottom: 50px;
+        box-sizing: border-box;
+    }
+    footer #newsPanel form input[type='email']::placeholder{
+        color: #a5a5a5; font-size: 18px; font-weight: 300;
+    }
+    footer #newsPanel form input[type='submit']{
+        display: block; font-size: 25px; font-weight: 500; width: 100%;
+        padding: 18px 0; background-color: #232323; color: #fff;
+    }
+    footer #newsPanel input[type='button']{
+        position: absolute; right: 80px; top: 60px; text-indent: -9999px;
+        background-color: transparent; border: none; box-shadow: none;
+        background-image: url('../images/icon_close.png');
+        width: 17px; line-height: 17px; background-repeat: no-repeat;
+    }
+    footer > div:last-child{
+        padding: 2.08vw 0 4.16vw;
+    }
+    footer > div:last-child span{
+        font-size: 12px; font-weight: 400; color: #e4e4e4;
+        line-height: 25px;
+    }
+    footer > div:last-child .snsArea{
+        position: relative;
+    }
+    footer > div:last-child .snsArea ul{
+        position: absolute; right: 0; top: -25px;
+    }
+    footer > div:last-child .snsArea ul li{
+        background-repeat: no-repeat; background-position: center; background-size: contain; width: 25px; line-height: 25px; text-indent: -9999px;
+        display: inline-block; margin-left: 20px; background-size: contain;
+    }
+    footer > div:last-child .snsArea ul li a{
+        display: block;
+    }
+    footer > div:last-child .snsArea ul li:first-child{background-image: url('../images/icon_sns_01.png');}
+    footer > div:last-child .snsArea ul li:nth-child(2){background-image: url('../images/icon_sns_02.png');}
+    footer > div:last-child .snsArea ul li:nth-child(3){background-image: url('../images/icon_sns_03.png');}
+    footer > div:last-child .snsArea ul li:nth-child(4){background-image: url('../images/icon_sns_04.png');}
+    footer > div:last-child .snsArea ul li:nth-child(5){background-image: url('../images/icon_sns_05.png');}
+
+    .pager{
+        width: 640px; margin: 0 auto;
+        position: relative;
+    }
+    .pager > a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        background-size: 15px 25px; width: 15px; line-height: 25px;
+        position: absolute; top: 13px; 
+    }
+    .pager > a:first-of-type{
+        background-image: url('../images/icon_pager_left.png'); left: 0;
+        background-position: left center;
+    }
+    .pager > a:last-of-type{
+        background-image: url('../images/icon_pager_right.png'); right: 0;
+        background-position: right center;
+    }
+    .pager ol{
+        text-align: center; padding: 0 114px 80px;
+        box-sizing: border-box;
+    }
+    .pager ol li{
+        font-size: 24px; width: 50px; line-height: 50px;
+        margin: 0 auto; display: inline-block;
+    }
+    .pager ol li:not(:first-child){
+        margin-left: 100px;
+    }
+    .pager ol li a{
+        color: #656565; display: block;
+    }
+    .pager ol li.active{
+        width: 50px; line-height: 50px; background-color: #232323;
+        border-radius: 4px; font-size: 32px;
+    }
+    .pager ol li.active a{
+        color: #f4f4f4; display: block;
+    }
+    nav.smallMenu{
+        margin-bottom: 20px;
+    }
+    nav.smallMenu ol{
+        padding-left: 20px;
+    }  
+    nav.smallMenu{
+        margin-bottom: 20px;
+    }
+    nav.smallMenu ol{
+      padding-left: 20px;
+    }  
+    nav.smallMenu ol:after{
+      content: ''; display: block; clear: both;
+    }
+    nav.smallMenu ol li{
+      float: right; padding: 0 10px; font-size: 11px; line-height: 15px;
+      font-weight: 400;
+    }
+    nav.smallMenu ol li:not(:first-child){
+      border-right: 1px solid #e4e4e4;
+    }
+    nav.smallMenu ol li a{
+      color: #454545;
+    }
+}
+
+
+@media screen and (min-width:1280px){
+    nav > input,
+    [id*='Panel'],
+    .detailContainer > .bx-wrapper,
+    .detailContainer > [class*='mobile_']{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    [id*='Panel']:not(#filterPanel):not(#newsPanel){
+        background-color: #f0f0f0; z-index: 10; box-shadow: 3px 3px 8px
+        #656565;
+    }
+    [class*='collectionbox'],
+    ul.looksLink,
+    [class*='Container'],
+    [class*='Box'],
+    [class*='Tab'],
+    [class*='_Area'],
+    [class*='lookBook_']{
+        padding-top: 12.1vw; 
+    }
+    [class*='Tab']{
+        margin-bottom: 80px;
+    }
+    header > .panel > #searchPanel{
+        width: 800px; padding: 105px 115px 70px;
+        position: absolute; right: 2.86vw; top: 10.15vw; box-sizing: border-box;
+    }
+    header > .panel > #searchPanel input[type='button']{
+        position: absolute; background-color: transparent;
+        border: none; box-shadow: none; width: 17px; text-indent: -9999px;
+        background-image: url('../images/icon_close.png');
+        background-repeat: no-repeat; background-size: 17px;
+        right: 30px; top: 30px; background-position: center;
+    }
+    header > .panel > #searchPanel input[type='search']{
+        background-color: transparent; box-shadow: none; border: none;
+        display: block; width: 100%;
+        font-size: 20px; color: #232323; font-weight: 400;
+        padding: 0 45px; line-height: 40px;
+        border-bottom: 1px solid #232323;
+        background-image: url('../images/icon_search_enter.png');
+        background-repeat: no-repeat; background-size: 28px;
+        background-position: left 0 bottom 6px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    header > .panel > #searchPanel input[type='search']::placeholder{
+        font-size: 15px; color: #a5a5a5;
+    }
+    header > .panel > #searchPanel h2{
+        padding: 0 40px 0 45px; font-size: 18px; display: inline-block;
+        color: #232323; font-weight: 400; vertical-align: top;
+        line-height: 30px;
+    }
+    header > .panel > #searchPanel ul{
+        display: inline-block;
+    }
+    header > .panel > #searchPanel ul li{
+        font-size: 18px; line-height: 30px;
+    }
+    header > .panel > #searchPanel ul li a{
+        color: #232323; font-weight: 300; text-decoration: underline;
+    }
+    header > .panel >*:not(#searchPanel){
+        width: 400px; position: absolute; right: 2.86vw; top: 10.15vw;
+    }
+    header > .panel >*:not(#searchPanel) h2{
+        font-size: 17px; font-weight: 600; color: #232323; text-align: center;
+        line-height: 94px; border-bottom: 1px solid #a5a5a5; box-sizing: border-box; margin-bottom: 20px; 
+    }
+    header > .panel >*:not(#searchPanel) ul:not(strong) {
+        padding: 0 20px; font-size: 12px; color: #232323; overflow-y: auto; max-height: 330px;
+    }
+    header > .panel >*:not(#searchPanel) ul li{
+        margin-bottom: 20px; border-bottom: 1px solid #a5a5a5; padding: 0 0 25px 100px; background-repeat: no-repeat; background-size: 80px 112px;
+        background-position: left top;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd strong{
+        font-size: 13px; font-weight: 400; color: #000;
+    }
+    header > .panel > #wishPanel ul li:first-of-type{
+        background-image: url('../images/myWishlist_01.png');
+    }
+    header > .panel >*:not(#searchPanel) ul li dl:after{
+        content: ''; display: block; clear: both;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dt{
+        font-weight: 500; line-height: 18px; margin-bottom: 60px; padding-right: 20px; box-sizing: border-box;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd{
+        font-weight: 300;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd:first-of-type{
+        margin-bottom: 10px;
+    }
+    header > .panel >*:not(#searchPanel) ul li dl dd:not(:first-of-type){
+        display: inline-block;
+    }
+    header > .panel >*:not(#searchPanel) li dl dd:last-of-type{
+        float: right;
+    }
+    header > .panel >*:not(#searchPanel) > ul.deactive{
+        display: none;
+    }
+    header > .panel >*:not(#searchPanel) > p{
+        display: none; text-align: center; margin-bottom: 30px;
+        font-size: 16px; color: #232323;
+    }
+    header > .panel >*:not(#searchPanel) > p.active{
+        display: block;
+    }
+    header > .panel >*:not(#searchPanel) > div{
+        padding: 20px;
+        border-top: 1px solid #a5a5a5;
+    }
+    header > .panel >*:not(#searchPanel) > div a[class*='btn']{
+        text-align: center; margin: 0 auto; display: block;
+        font-size: 15px; font-weight: 500; color: #232323;
+        width: 100%; line-height: 50px; border: 1px solid #232323;
+        box-sizing: border-box;
+        transition-duration: 0.35s;
+    }
+    header > .panel >*:not(#searchPanel) > div a[class*='btn']:hover{
+        background-color: #232323; color: #fff;
+    }
+    header > .panel >*:not(#searchPanel) ul li{
+        position: relative;
+    }
+    header > .panel >*:not(#searchPanel) ul li input[type='button']{
+        width: 15px; line-height: 17px;
+        position: absolute; top: 0; right: 0; background-image: url('../images/icon_delete.png'); background-repeat: no-repeat;
+        text-indent: -9999px;
+        box-shadow: none; border: none; background-color: transparent;
+    }
+    header > .panel > #cartPanel ul li:first-of-type{
+        background-image: url('../images/cart_01.png');
+    }
+    header > .panel > #cartPanel div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > .panel > #cartPanel div mark{
+        background-color: transparent; font-style: normal;
+        font-size: 13px; font-weight: 500; margin-bottom: 20px;
+        display: inline-block;
+    }
+    header > .panel > #cartPanel div strong{
+        font-size: 15px; float: right;
+    }
+    /* ? header panel end 
+        ? header start*/
+    header{
+        width: 100%; background-color: rgba(0, 0, 0, 0.3);
+        position: fixed; z-index: 100; top: 0; left: 0;
+        transition-duration: 0.35s;
+    }
+    header > .banner{
+        background-color: #232323; text-align: center; padding: 0 5%;
+    }
+    header > .banner a{
+        color: #f4f4f4; font-size: 0.62vw; font-weight: 600; 
+        text-decoration: none; line-height: 2.08vw;
+    }
+    header > .wrap{
+        position: relative;
+    }
+    header > .wrap h1{
+        line-height: 1.71vw; width: 16.61%;
+        left: 2.86%; position: absolute; top: 4.16vw;
+    }
+    header:hover > .wrap h1{
+        background-image: url('../images/logo_black.png');
+        background-repeat: no-repeat;
+        text-indent: -9999px; background-size: contain;
+    }
+    header > .wrap h1 a{
+        display: block;
+    }
+    header > .wrap h1 a img{
+        width: 100%; max-width: 319px;
+    }
+    header > .wrap nav{
+        width: 100%;
+    }
+    header > .wrap nav ul{
+        width: 51.09%; margin: 0; padding: 3.75vw 5.8% 4.16vw 23.28%;
+    }
+    header > .wrap nav ul > li{
+        display: inline-block;
+        vertical-align: top; 
+    }
+    header > .wrap nav ul > li:not(:first-child){
+        margin-left: 1.56%;
+    }
+    header > .wrap nav ul li mark{
+        font-size: 1.19vw; font-weight: 600; color: #232323; background-color: transparent; font-style: normal; display: block; padding-top: 0.93vw;
+    }
+    header > .wrap nav ul li mark a{
+        display: block; color: #232323; padding: 0;
+    }
+    header > .wrap nav ul li .gnb_wrap,
+    header > .wrap nav ul li .col_wrap{
+        background-color: #f4f4f4; position: absolute; padding: 4.42vw 0 4.16vw 0; left: 0; width: 100%; display: none; box-sizing: border-box; 
+        box-shadow: 0px 3px 3px 0px #656565;
+    }
+    header > .wrap nav ul li .gnb_wrap ol{
+        width: 15.62%;
+        display: inline-block; margin-left: -0.26%; vertical-align: top;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:first-child{
+        margin-left: 9.21%; 
+    }
+    header > .wrap nav ul li .gnb_wrap ol li{
+        display: block; 
+    }
+    header > .wrap nav ul li .gnb_wrap ol.style li:first-child{
+        font-size: 1.14vw; font-weight: 700; margin-bottom: 2.34vw;
+    }
+    header > .wrap nav ul li .gnb_wrap ol.style li:last-child{
+        font-size: 1.04vw; font-weight: 600;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:first-child li a{
+        color: #232323; display: block; 
+    }
+    header > .wrap nav ul li .gnb_wrap ol li strong{
+        color: #232323; font-size: 1.14vw; font-weight: 600; display: block;
+        margin-bottom: 2.34vw;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li{
+        font-size: 1.04vw; font-weight: 300; line-height: 1.35vw;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li:not(:last-child){
+        margin-bottom: 0.78vw;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li a{
+        color: #454545; display: block;
+    }
+    header > .wrap nav ul li .gnb_wrap ol:not(.style) li:hover a{
+        color: #232323; font-weight: 400;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap .quote{
+        width: 18.85%; margin: 0 2.08% 0 2.86%; padding-top: 9.37vw;
+        display: inline-block; font-weight: 100; box-sizing: border-box;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap .quote p{
+        text-align: center; font-size: 1.45vw; line-height: 1.77vw; 
+        margin-bottom: 7.03vw;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap .quote span{
+        display: block; text-align: right; font-size: 0.83vw; line-height: 1.14vw;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol{
+        width: 73.33%; display: inline-block; vertical-align: top;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li{
+        display: inline-block; text-align: center; width: 14.58vw;
+        font-size: 1.04vw; font-weight: 400;
+        background-size: 12.5vw 20.83vw; background-repeat: no-repeat; background-position: center bottom; height: 24.37vw;
+        transition-duration: 0.35s;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:not(:first-child){
+        margin-left: 1.06%;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li a{
+        color: #232323; display: block; line-height: 1.35vw;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(1){background-image: url('../images/bg_09.png');}
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(2){background-image: url('../images/bg_10.png');}
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(3){background-image: url('../images/bg_11.png');}
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(4) {background-image: url('../images/bg_12.png');}    
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:hover{
+        font-weight: 600;
+    }
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(1):hover{background-image: url('../images/bg_05.png');}
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(2):hover{background-image: url('../images/bg_06.png');}
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(3):hover{background-image: url('../images/bg_07.png');}
+    header > .wrap nav ul li:nth-child(3) .col_wrap ol li:nth-child(4):hover {background-image: url('../images/bg_08.png');}  
+    header:hover{
+        display: block; background-color: #f4f4f4;
+    }
+    header.transparentbg:hover > .wrap nav ul > li mark,
+    header.transparentbg:hover > .wrap nav ul > li mark a{
+        color: #8f8f8f;
+    }
+    header > .wrap nav ul > li:hover mark{
+        color: #232323; background-image: url('../images/icon_nav_dot.png'); background-repeat: no-repeat; background-position: center top;
+        background-size: 0.41vw 0.41vw; box-sizing: border-box;
+    }
+    header.transparentbg > .wrap nav ul > li:hover mark,
+    header.transparentbg > .wrap nav ul > li:hover mark a{
+        color: #232323;
+    }
+    header > .wrap nav ul li:first-child:hover .gnb_wrap{
+        display: block;
+    }
+    header > .wrap nav ul li:nth-child(2):hover .gnb_wrap{
+        display: block;
+    }
+    header > .wrap nav ul li:nth-child(3):hover .col_wrap{
+        display: block;
+    }
+    header > .wrap > div{
+        box-sizing: border-box; position: absolute; right: 2.86%; width: 18%; padding: 0; top: 4.01vw ; text-align: right;
+    }
+    header > .wrap > div form fieldset > *:not(span){
+        padding: 0; border: none; box-shadow: none; display: inline-block;
+        text-indent: -9999px; 
+        text-align: left;
+        border: none; background-color: transparent;
+        background-repeat: no-repeat; width: 32px; line-height: 35px; background-position: center bottom;
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(1){
+        background-image: url('../images/icon_search.png');
+    }
+    header.transparentbg:hover > .wrap > div form fieldset input[type='button']:nth-of-type(1){
+        background-image: url('../images/icon_search_black.png');
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(2){
+        background-image: url('../images/icon_wish.png');
+    }
+    header.transparentbg:hover > .wrap > div form fieldset input[type='button']:nth-of-type(2){
+        background-image: url('../images/icon_wish_black.png');
+    }
+    header > .wrap > div form fieldset a{
+        background-image: url('../images/icon_mypage.png');
+        display: inline-block; 
+    }
+    header.transparentbg:hover > .wrap > div form fieldset a{
+        background-image: url('../images/icon_mypage_black.png');
+    }
+    header > .wrap > div form fieldset input[type='button']:nth-of-type(3){
+        background-image: url('../images/icon_bags.png');
+    }
+    header.transparentbg:hover > .wrap > div form fieldset input[type='button']:nth-of-type(3){
+        background-image: url('../images/icon_bags_black.png');
+    }
+    header > .wrap > div form fieldset span{
+        font-size: 15px; color: #ffffff; display: inline-block;
+        line-height: 25px; font-weight: 400; vertical-align: bottom;
+    } 
+    header.transparentbg:hover > .wrap > div form fieldset span{
+        color: #232323;
+    } 
+    header > .wrap > div form fieldset input[type='button']:not(:first-child),
+    header > .wrap > div form fieldset a{
+        margin-left: 6.61%;
+    }
+    header > .wrap > div form fieldset :last-child{
+        display: none;
+    }
+    /*? index header background-color */
+    header:not(.transparentbg){
+        background-color: #fff;
+    }
+    header:not(.transparentbg):hover{
+        background-color: #f4f4f4;
+    }
+    header:not(.transparentbg) > .wrap h1{
+        background-image: url('../images/logo_black.png');
+        background-repeat: no-repeat;
+        text-indent: -9999px; background-size: contain;
+    }
+    header:not(.transparentbg) > .wrap > div form fieldset input[type='button']:nth-of-type(1){
+        background-image: url('../images/icon_search_black.png');
+    }
+    header:not(.transparentbg) > .wrap > div form fieldset input[type='button']:nth-of-type(2){
+        background-image: url('../images/icon_wish_black.png');
+    }
+    header:not(.transparentbg) > .wrap > div form fieldset a{
+        background-image: url('../images/icon_mypage_black.png');
+    }
+    header:not(.transparentbg) > .wrap > div form fieldset input[type='button']:nth-of-type(3){
+        background-image: url('../images/icon_bags_black.png');
+    }
+    header:not(.transparentbg) > .wrap > div form fieldset span{
+        color: #232323;
+    }
+    /* ? header end
+        ? footer start */
+    footer{
+        background-color: #232323; position: relative;
+    }
+    footer > div:first-child,
+    footer > div:last-child{
+        width: 88.02%; margin: 0 auto;
+    }
+    footer > div:first-child{
+        padding: 4.16vw 0 2.08vw; box-sizing: border-box;
+        border-bottom: 1px solid #a5a5a5; box-sizing: border-box;
+    }
+    footer > div:first-child h2{
+        max-width: 319px; line-height: 1.71vw; width: 16.61%; margin-bottom: 4.16vw;
+    }
+    footer > div:first-child h2 a{
+        display: block;
+    }
+    footer > div:first-child h2 a img{
+        width: 100%;
+    }
+    footer > div:first-child ul{
+        width: 100%;
+    }
+    footer > div:first-child ul:after{
+        content: ''; display: block; clear: both;
+    }
+    footer > div:first-child ul li{
+        float: left; font-size: 1.14vw; font-weight: 500;
+        padding-top: 4px; box-sizing: border-box;
+    }
+    footer > div:first-child ul li:not(:first-child){
+        margin-left: 5.46%;
+    }
+    footer > div:first-child ul li a{
+        color: #e4e4e4; display: block;
+    }
+    footer > div:first-child ul li:last-child input[type='button']{
+        padding-right: 1.04vw;
+        background-image: url('../images/arrow_newletter.png'); background-repeat: no-repeat; background-color: transparent; box-sizing: border-box; border: none; box-shadow: none; background-position: right top;
+        background-size: auto;
+        font-size: 1.14vw;  font-weight: 500;
+        color: #e4e4e4;
+    }
+    footer #newsPanel{
+        position: fixed; width: 36.97%; right: 0; max-height: 750px;
+        bottom: 0; padding: 50px 70px; box-sizing: border-box;
+        box-shadow: -3px -3px 5px 3px #656565; overflow-y: auto;
+        background-color: #f0f0f0; z-index: 100;
+    }
+    footer #newsPanel h2{
+        font-size: 25px; font-weight: 600; color: #232323; margin-bottom: 40px;
+    }
+    footer #newsPanel p:first-of-type,
+    footer #newsPanel span{
+        font-size: 16px; font-weight: 400; color: #232323; line-height: 22px;
+    }
+    footer #newsPanel p:first-of-type{
+        margin-bottom: 40px;
+    }
+    footer #newsPanel p:last-of-type{
+        font-size: 14px; font-weight: 300; color: #a5a5a5; line-height: 20px; margin-top: 20px;
+    }
+    footer #newsPanel span{
+        margin-bottom: 25px; padding: 5px 15px 0 0; background-image: url('../images/icon_star.png'); background-repeat: no-repeat; background-position: right top;
+        display: inline-block;
+    }
+    footer #newsPanel form label{
+        font-size: 18px; font-weight: 600; color: #232323;
+        padding: 5px 15px 0 0; background-image: url('../images/icon_star.png'); background-repeat: no-repeat; background-position: right top; margin-bottom: 10px; display: inline-block;
+    }
+    footer #newsPanel form select{
+        width: 100%; padding: 17px 15px 15px; border: 1px solid #454545;
+        margin-bottom: 30px; font-size: 16px;
+    }
+    footer #newsPanel form select option:first-child{
+        color: #a5a5a5;
+    }
+    footer #newsPanel form select option:not(:first-child){
+        color: #232323;
+    }
+    footer #newsPanel form input[type='email']{
+        width: 100%; display: block; border: 1px solid #454545; line-height: 45px; padding: 5px 15px 0; margin-bottom: 50px;
+        box-sizing: border-box; font-size: 16px;
+    }
+    footer #newsPanel form input[type='email']::placeholder{
+        color: #a5a5a5; font-size: 18px; font-weight: 300;
+    }
+    footer #newsPanel form input[type='submit']{
+        display: block; font-size: 25px; font-weight: 500; width: 100%;
+        padding-top: 5px; line-height: 45px; background-color: #232323; color: #fff;
+        box-sizing: border-box;
+    }
+    footer #newsPanel input[type='button']{
+        position: absolute; right: 80px; top: 60px; text-indent: -9999px;
+        background-color: transparent; border: none; box-shadow: none;
+        background-image: url('../images/icon_close.png');
+        width: 17px; line-height: 17px; background-repeat: no-repeat;
+    }
+
+    footer > div:last-child{
+        padding: 2.08vw 0 4.16vw;
+    }
+    footer > div:last-child span{
+        font-size: 0.83vw; font-weight: 400; color: #e4e4e4;
+        line-height: 2.08vw;
+    }
+    footer > div:last-child .snsArea{
+        position: relative;
+    }
+    footer > div:last-child .snsArea ul{
+        position: absolute; right: 0; top: -2.08vw;
+    }
+    footer > div:last-child .snsArea ul li{
+        background-repeat: no-repeat; background-position: center; background-size: contain; width: 2.08vw; line-height: 2.08vw; text-indent: -9999px;
+        display: inline-block; margin-left: 1.97vw; background-size: contain;
+    }
+    footer > div:last-child .snsArea ul li a{
+        display: block;
+    }
+    footer > div:last-child .snsArea ul li:first-child{background-image: url('../images/icon_sns_01.png');}
+    footer > div:last-child .snsArea ul li:nth-child(2){background-image: url('../images/icon_sns_02.png');}
+    footer > div:last-child .snsArea ul li:nth-child(3){background-image: url('../images/icon_sns_03.png');}
+    footer > div:last-child .snsArea ul li:nth-child(4){background-image: url('../images/icon_sns_04.png');}
+    footer > div:last-child .snsArea ul li:nth-child(5){background-image: url('../images/icon_sns_05.png');}
+    /* ? footer end
+       ? pager start */
+    .pager{
+        width: 640px; margin: 0 auto;
+        position: relative;
+    }
+    .pager > a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        background-size: 15px 25px; width: 15px; line-height: 25px;
+        position: absolute; top: 13px; 
+    }
+    .pager > a:first-of-type{
+        background-image: url('../images/icon_pager_left.png'); left: 0;
+        background-position: left center;
+    }
+    .pager > a:last-of-type{
+        background-image: url('../images/icon_pager_right.png'); right: 0;
+        background-position: right center;
+    }
+    .pager ol{
+        text-align: center; padding: 0 114px 80px;
+        box-sizing: border-box;
+    }
+    .pager ol li{
+        font-size: 24px; width: 50px; line-height: 50px;
+        margin: 0 auto; display: inline-block;
+    }
+    .pager ol li:not(:first-child){
+        margin-left: 100px; 
+    }
+    .pager ol li a{
+        color: #656565; display: block;
+    }
+    .pager ol li.active{
+        width: 50px; line-height: 50px; background-color: #232323;
+        border-radius: 4px; font-size: 32px;
+    }
+    .pager ol li.active a{
+        color: #f4f4f4; display: block;
+    }
+    /* ? pager end
+       ? smallnav start */
+    nav.smallMenu{
+        margin-bottom: 20px;
+    }
+    nav.smallMenu ol{
+        padding-left: 20px;
+    }  
+    nav.smallMenu ol:after{
+        content: ''; display: block; clear: both;
+    }
+    nav.smallMenu ol li{
+        float: left; padding: 0 10px; font-size: 11px; line-height: 15px;
+        font-weight: 400;
+    }
+    nav.smallMenu ol li:not(:first-child){
+        border-left: 1px solid #e4e4e4;
+    }
+    nav.smallMenu ol li a{
+        color: #454545; display: block;
+    }
+    /* ? smallnav end */
+}

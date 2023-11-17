@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ysl.js"></script>  
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <title>YSL</title>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <a href="index.html">ENJOY COMPLIMENTARY SHIPPING AND SIGNATURE SAINT LAURENT PACKAGING FOR ANY ORDER PLACED ON YSL.COM.</a>
+    </div>
+    <div class="panel">
+      <div id="searchPanel">
+        <input type="button" value="close" class="btn_close">
+        <input type="search" placeholder="SEARCH FOR PRODUCTS" autocomplete="" title="Search for products">
+        <h2>SUGGESTIONS</h2>
+        <ul>
+          <li><a href="women_NEW.html">NEW - WOMEN'S SUMMER 23</a></li>
+          <li><a href="men_NEW.html">NEW - MEN'S SPRING 23</a></li>
+          <li><a href="women_BAG_all-1.html">WOMEN'S HANDBAGS</a></li>
+          <li><a href="women_minibag.html">WOMEN'S MINI BAGS</a></li>
+          <li><a href="women_SHOES_all.html">WOMEN'S SHOES</a></li>
+        </ul>
+      </div>
+      <div id="wishPanel">
+        <h2>WISHLIST 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>JAMIE MEDIUM CHAIN BAG "CARRÉ RIVE GAUCHE" IN LAMBSKIN AND SUEDE</dt>
+              <dd>BLACK</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 3,300</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteWish">
+          </li>
+        </ul>
+        <p id="deleteWish">YOUR WISHLIST IS EMPTY.</p>
+        <div>
+          <a href="I10_myWishlist.html" class="btn_view">VIEW WISHIST</a>
+        </div>
+      </div>
+      <div id="cartPanel">
+        <h2>SHOPPING BAG 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>CASSANDRE MATELASSÉ CARD CASE IN GRAIN DE POUDRE EMBOSSED LEATHER</dt>
+              <dd>FUCHSIA</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 325</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteCart">
+          </li>
+        </ul>
+        <p id="deleteCart">YOUR CART IS EMPTY.</p>
+        <div>
+          <mark>ESTIMATED TOTAL</mark>
+          <strong>$ 325</strong>
+          <a href="CK01_checkOut.html" class="btn_check">CHECK OUT</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <h1>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="welcome to saint laurent">
+        </a>
+      </h1>
+      <nav id="muignb">
+        <input type="button" value="close" class="btn_close">
+        <ul>
+          <li>
+            <mark>SHOP WOMEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="women_NEW.html">NEW 2023</a></li>
+                <li><a href="women_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="women_RTW_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_jackets.html">JACKETS</a></li>
+                <li><a href="women_dresses.html">DRESSES &amp; SKIRTS</a></li>
+                <li><a href="women_shirts.html">SHIRTS &amp; BLOUSES</a></li>
+                <li><a href="women_trousers.html">TROUSERS &amp; SHORTS</a></li>
+                <li><a href="women_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="women_knitwear.html">KNITWEAR</a></li>
+                <li><a href="women_leather.html">LEATHER</a></li>
+                <li><a href="women_jersey.html">JERSEY</a></li>
+                <li><a href="women_denim.html">DENIM</a></li>
+                <li><a href="women_lingerie.html">LINGERIE</a></li>
+              </ol>
+              <ol>
+                <li><strong>BAGS</strong></li>                
+                <li><a href="women_BAG_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_hobobag.html">HOBO &amp; BUCKETS</a></li>
+                <li><a href="women_maxibag.html">MAXI BAGS</a></li>
+                <li><a href="women_totebag.html">TOTE &amp; SHOPPING</a></li>
+                <li><a href="women_clutches.html">CLUTCHES &amp; MINAUDIERES</a></li>
+                <li><a href="women_crossbodybag.html">CROSSBODY BAGS</a></li>
+                <li><a href="women_shoulderbag.html">SHOULDER BAGS</a></li>
+                <li><a href="women_tophandles.html">TOP HANDLES</a></li>
+                <li><a href="women_minibag.html">MINI BAGS</a></li>
+              </ol>
+              <ol>
+                <li><strong>SHOES</strong></li>
+                <li><a href="women_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="women_sandals.html">SANDALS</a></li>
+                <li><a href="women_pumps.html">PUMPS</a></li>
+                <li><a href="women_mules.html">MULES</a></li>
+                <li><a href="women_boots.html">BOOTS &amp; BOOTIES</a></li>
+                <li><a href="women_sneakers.html">SNEAKERS</a></li>
+                <li><a href="women_loafers.html">LOAFERS &amp; BALLERINAS</a></li>
+                <li><a href="women_wedges.html">ESPADRILLES &amp; WEDGES</a></li>
+              </ol>
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>               
+                <li><a href="women_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="women_scarves.html">SCARVES</a></li>
+                <li><a href="women_sunglasses.html">SUNGLASSES</a></li>
+                <li><a href="women_jewelry.html">JEWELLERY</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>SHOP MEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="men_NEW.html">NEW 2023</a></li>
+                <li><a href="men_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="men_RTW_all.html">VIEW ALL</a></li>
+                <li><a href="men_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="men_jackets.html">JACKETS &amp; PANTS</a></li>
+                <li><a href="men_shirts.html">SHIRTS</a></li>
+                <li><a href="men_knitwear.html">KNITWEAR</a></li>
+                <li><a href="men_jersey.html">JERSEY</a></li>
+              </ol>      
+              <ol>
+                <li><strong>BAGS</strong></li>
+                <li><a href="men_BAG_all.html">VIEW ALL</a></li>
+                <li><a href="men_backpacks.html">BACKPACKS</a></li>
+                <li><a href="men_camerabags.html">CAMERA BAGS</a></li>
+                <li><a href="men_messengers.html">MESSENGERS</a></li>
+                <li><a href="men_business.html">BUSINESS</a></li>
+                <li><a href="men_shoppingbags.html">SHOPPING BAGS</a></li>
+                <li><a href="men_trabelbags.html">TRABEL BAGS</a></li>
+              </ol>        
+              <ol>
+                <li><strong>SHOES</strong></li>               
+                <li><a href="men_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="men_boots.html">BOOTS</a></li>
+                <li><a href="men_sneakers.html">SNEAKERS</a></li>
+                <li><a href="men_loafers.html">LOAFERS &amp; DERBIES</a></li>
+                <li><a href="men_sandals.html">ESPADRILLES &amp; SANDALS</a></li>
+              </ol>     
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>
+                <li><a href="men_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="men_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="men_belts.html">BELTS</a></li>
+                <li><a href="men_jewelry.html">JEWELRY</a></li>
+                <li><a href="men_textile.html">TEXTILE ACCESSORIES</a></li>
+                <li><a href="men_sunglasses.html">SUNGLASSES</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>COLLECTIONS</mark>
+            <div class="col_wrap">
+              <div class="quote">
+                <p>"FASHIONS FADE BUT
+                  STYLE IS ETERNAL."</p>
+                <span>BY YVES SAINT LAURENT</span>
+              </div>
+              <ol>
+                <li>
+                  <a href="C01_women_winter23.html">
+                    WOMEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C03_men_winter23.html">
+                    MEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C02_women_summer23.html">
+                    WOMEN'S SUMMER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C04_men_springsummer23.html">
+                    MEN'S SPRING SUMMER 23
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li><mark><a href="sustainability.html">SUSTAINABILITY</a></mark></li>
+          <li><mark><a href="F01_client_service.html">CLIENT SERVICE</a></mark></li>
+        </ul>
+      </nav>
+      <div class="sideicon">
+        <form>
+          <fieldset>
+            <input type="button" value="search" data-panel="searchPanel">
+            <input type="button" value="wishlist" data-panel="wishPanel">
+            <a href="I01_sign_IN.html">my page</a>
+            <input type="button" value="cart" data-panel="cartPanel">
+            <span>+1</span>
+            <input type="button" value="menu" data-panel="muignb">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div class="storeContainer">
+    <div>
+      <nav class="smallMenu">
+        <ol>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="F04_store_locator.html">STORE LOCATOR</a></li>
+        </ol>
+      </nav>
+      <section>
+        <div>
+          <h2>FIND A STORE</h2>
+          <label for="country">COUNTRY</label>
+          <select id="country">
+            <option>SELECT A COUNTRY</option>
+            <option selected>UNITED STATES</option>
+            <option>KOREA</option>
+          </select>
+          <label for="city">CITY</label>
+          <select id="city">
+            <option>SELECT A CITY</option>
+            <option>ATLANTA</option>
+            <option>AUSTIN</option>
+            <option selected>BEVERLY HILLS</option>
+            <option>BOSTON</option>
+            <option>CABAZON</option>
+            <option>CENTRAL VALLEY</option>
+            <option>CHARLOTTE</option>
+            <option>CHICAGO</option>
+            <option>COSTA MESA</option>
+            <option>DALLAS</option>
+            <option>EAST RUTHERFORD</option>
+            <option>GARDEN CITY</option>
+            <option>GLENDALE</option>
+            <option>HONOLULU</option>
+            <option>HOUSTON</option>
+            <option>LAS VEGAS</option>
+            <option>LOS ANGELES</option>
+            <option>MIAMI</option>
+            <option>NASHVILLE</option>
+            <option>NEW YORK</option>
+            <option>NOT DEFINED</option>
+            <option>ORLANDO</option>
+            <option>PALM BEACH</option>
+            <option>PHILADELPHIA</option>
+            <option>PORTLAND</option>
+            <option>ROSEVILLE</option>
+            <option>SAN DIEGO</option>
+            <option>SAN FRANCISCO</option>
+            <option>SAN JOSE</option>
+            <option>SAN JUAN</option>
+            <option>SAN MARCOS</option>
+            <option>SCOTTSDALE</option>
+            <option>SHORT HILLS</option>
+            <option>SUNRISE</option>
+            <option>TAMPA</option>
+            <option>WASHINGTON DC</option>
+          </select>
+          <input type="button" value="CHOOSE">
+          <div>
+            <span>1 STORES FOUND</span>
+            <dl>
+              <dt>01. RODEO DRIVE</dt>
+              <dd>326 NORTH RODEO DRIVE, BEVERLY HILLS CA 90210
+                BEVERLY HILLS CALIFORNIA
+                90210</dd>
+              <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+              <dd>
+                <b>OPENING HOURS</b>
+                <ol>
+                  <li>MONDAY: 10:00 AM - 7:00 PM</li>
+                  <li>TUESDAY: 10:00 AM - 7:00 PM</li>
+                  <li>WEDNESDAY: 10:00 AM - 7:00 PM</li>
+                  <li>THURSDAY: 10:00 AM - 7:00 PM</li>
+                  <li>FRIDAY: 10:00 AM - 7:00 PM</li>
+                  <li>SATURDAY: 10:00 AM - 7:00 PM</li>
+                  <li>SUNDAY: 12:00 AM - 6:00 PM</li>
+                  <li><a href="tel:+13102715051">+13102715051</a></li>
+                </ol>
+              </dd>
+            </dl>
+            <a href="F05_appointment.html">MAKE AN APPOINTMENT</a>
+          </div>
+        </div>
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18709.997889291142!2d2.2862698764241314!3d48.85520225491028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc4c301beff%3A0x60075d02edb47c15!2sSaint%20Laurent!5e0!3m2!1sko!2skr!4v1699850616189!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <span>54 STORES FOUND</span>
+      <ul>
+        <li>
+          <dl>
+            <dt>01. WESTFIELD VALLEY FAIR</dt>
+            <dd>WESTFIELD VALLEY FAIR, 2855 STEVENS CREEK BLVD, 
+              SPACE A223, SANTA CLARA, CA, SAN JOSE CALIFORNIA, 
+              95050</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>02. PORTLAND</dt>
+            <dd>700 SW FIFTH AVENUE, PORTLAND OREGON, 97204</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>03. TAMPA INTERNATIONAL PLAZA</dt>
+            <dd>2223 N WESTSHORE BLVD. SUITE #227, TAMPA FLORIDA, 33607</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>04. COPLEY PLACE</dt>
+            <dd>100 HUNTINGTON AVENUE BOSTON, MA, BOSTON 
+              MASSACHUSETTS, 02116</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>05. ROSEMONT OUTLET</dt>
+            <dd>5220 FASHION OUTLETS WAY SUITE 2087, CHICAGO 
+              ILLINOIS, 60018</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>06. BAL HARBOUR SHOPS</dt>
+            <dd>BAL HARBOUR SHOPS, 9700 COLLINS AVE, SUITE 144, 
+              BAL HARBOUR, FL 33154, MIAMI FLORIDA, 33154</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS, FINE JEWELRY</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>07. BLOOMINGDALES LOS ANGELES</dt>
+            <dd>10250 SANTA MONICA BLVD, LOS ANGELES, CA, LOS 
+              ANGELES CALIFORNIA, 90067</dd>
+            <dd>WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>08. SAKS ATLANTA</dt>
+            <dd>3440 PEACHTREE RD, ATLANTA GEORGIA, 30326</dd>
+            <dd>WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>09. BLOOMINGDALES ROOSEVELT FIELD</dt>
+            <dd>630 OLD COUNTRY ROAD, GARDEN CITY NEW YORK, 
+              11530</dd>
+            <dd>WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>10. RODEO DRIVE</dt>
+            <dd>326 NORTH RODEO DRIVE, BEVERLY HILLS CA 90210,
+              BEVERLY HILLS CALIFORNIA, 90210</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS, FINE JEWELRY</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>11. THE PLAZA AT KING OF PRUSSIA</dt>
+            <dd>350 MALL BLVD, SUITE #3024, KING OF PRUSSIA, 
+              PHILADELPHIA PENNSYLVANIA, 19406</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>12. SCOTTSDALE FASHION SQUARE</dt>
+            <dd>7014 EAST CAMELBACK ROAD, SUITE 1141, SCOTTSDALE, 
+              ARIZONA, SCOTTSDALE ARIZONA, 85251</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>13. MALL AT SHORT HILLS</dt>
+            <dd>SHORT HILLS, 1200 MORRIS TURNPIKE, SPACE A-233 
+              SHORT HILLS, NJ, SHORT HILLS NEW JERSEY, 07078</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>14. DESERT HILLS PREMIUM OUTLETS</dt>
+            <dd>DESERT HILLS PREMIUM OUTLETS, 48650 SEMINOLE DR, 
+              SUITE, SPACE #222, CABAZON, CA 92230, CABAZON 
+              CALIFORNIA, 92230</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>15. SAN FRANCISCO - GRANT AVENUE</dt>
+            <dd>90 GRANT AVENUE, SAN FRANCISCO, CALIFORNIA, 
+              UNITED STATES, 94108, SAN FRANCISCO CALIFORNIA, 
+              94108</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>16. THE SHOPS AT CRYSTALS</dt>
+            <dd>CRYSTALS, 3720 LAS VEGAS BLVD SOUTH, SUITE #221, 
+              LAS VEGAS NV 89158, LAS VEGAS NEVADA, 89158</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>17. AMERICANA</dt>
+            <dd>859 AMERICANA WAY, GLENDALE, CA, GLENDALE 
+              CALIFORNIA, 91210</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>18. THE MALL AT GREEN HILLS</dt>
+            <dd>2126 ABBOTT MARTIN ROAD, SUITE 304, NASHVILLE TN, 
+              NASHVILLE TENNESSEE, 37215</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>19. CHARLOTTE SOUTHPARK</dt>
+            <dd>4400 SHARON ROAD, SUITE N14, CHARLOTTE NORTH 
+              CAROLINA, 28211</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>20. AMERICAN DREAM</dt>
+            <dd>1 AMERICAN DREAM WAY. EAST RUTHERFORD NEW 
+              JERSEY, 07073</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>21. SOUTH COAST PLAZA</dt>
+            <dd>SOUTH COAST PLAZA, 3333 BRISTOL STREET. SUITE 2224, 
+              COSTA MESA, CA 92626, COSTA MESA CALIFORNIA, 
+              92626</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>22. THE ROYAL POINCIANA PLAZA</dt>
+            <dd>340 POINCIANA WAY, SUITE M300 PALM BEACH, 
+              FLORIDA, PALM BEACH FLORIDA, 33480</dd>
+            <dd>WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>23. GREENE STREET</dt>
+            <dd>80 GREENE STREET NEW YORK, NY 10012, NEW YORK 
+              NEW YORK, 10012</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>24. TAMPA INTERNATIONAL PLAZA</dt>
+            <dd>2223 N WESTSHORE BLVD. SUITE #227, TAMPA FLORIDA, 
+              33607</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>25. SAINT LAURENT RIVE DROITE LOS ANGELES</dt>
+            <dd>469 RODEO DRIVE, BEVERLY HILLS CA 90210, LOS 
+              ANGELES CALIFORNIA, 90210</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS, LIFESTYLE, FINE 
+              JEWELRY</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>26. FASHION VALLEY MALL</dt>
+            <dd>7007 FRIARS ROAD, SPACE 342C, SAN DIEGO 
+              CALIFORNIA, 92108</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>27. ROSEVILLE WESTFIELD</dt>
+            <dd>1151 GALLERIA BLVD. SUITE 1050, ROSEVILLE 
+              CALIFORNIA, 95678</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>28. MCLEAN VA</dt>
+            <dd>TYSONS GALLERIA, 2001 INTERNATIONAL DRIVE # 2138, 
+              MCLEAN, VA, WASHINGTON DC WASHINGTON, 22102</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>29. CHICAGO</dt>
+            <dd>WALDORF ASTORIA, 11 EAST WALTON STREET, CHICAGO 
+              IL 60611, CHICAGO ILLINOIS, 60611</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>30. AUSTIN THE DOMAIN</dt>
+            <dd>11601 CENTURY OAKS TERRACE SUITE 103, AUSTIN TEXAS, 
+              78758</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>31. YSL SAKS NYC</dt>
+            <dd>611 FIFTH AVE, NEW YORK NEW YORK, 10022</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>32. YSL BLOOMINGDALES SOUTH COAST PLAZA</dt>
+            <dd>3333 S BRISTOL ST., COSTA MESA, CA, COSTA MESA 
+              CALIFORNIA, 92626</dd>
+            <dd>WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>33. YSL BLOOMINGDALES SAN JOSE</dt>
+            <dd>2847 STEVENS CREEK BLVD, SAN JOSE CALIFORNIA, 
+              95128</dd>
+            <dd>WOMEN’S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>34. THE FORUM SHOPS AT CAESARS PALACE</dt>
+            <dd>3500 LAS VEGAS BLVD SOUTH LAS VEGAS, NEVADA,
+              LAS VEGAS NEVADA, 89109</dd>
+            <dd>MEN'S AND WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>35. MALL AT MILLENIA</dt>
+            <dd>THE MALL AT MILLENIA, 4200 CONROY ROAD #J-260, 
+              ORLANDO, FL 32839, ORLANDO FLORIDA, 32839</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>36. BLOOMINGDALES GLENDALE</dt>
+            <dd>103 SOUTH BRAND BLVD, GLENDALE CALIFORNIA, 91210</dd>
+            <dd>WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>37. AVENTURA MALL</dt>
+            <dd>19501 BISCAYNE BLVD, MIAMI US, MIAMI FLORIDA, 33180</dd>
+            <dd>MEN'S AND WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>38. MIAMI DESIGN DISTRICT</dt>
+            <dd>149 NE 40TH STREET MIAMI, FLORIDA, MIAMI FLORIDA, 
+              33137</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS, LIFESTYLE</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>39. WESTFIELD TOPANGA</dt>
+            <dd>6600 TOPANGA CANYON BLVD., CANOGA PARK, CA, 
+              LOS ANGELES CALIFORNIA, 91303</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>40. DALLAS NORTHPARK</dt>
+            <dd>8687 NORTH CENTRAL EXPRESSWAY, DALLAS TEXAS, 
+              75225</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>41. SAN JUAN</dt>
+            <dd>1000 MALL OF SAN JUAN BLVD, SUITE 278, SAN JUAN, PR, 
+              SAN JUAN PUERTO RICO, 00924</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>42. THE WOODLANDS MARKET STREET</dt>
+            <dd>9595 SIX PINES DRIVE, SPACE #680, THE WOODLANDS, 
+              TX 77380, NOT DEFINED UNITED STATES OF AMERICA, 
+              77380</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>43. BEVERLY CENTER</dt>
+            <dd>BEVERLY CENTER, 8500 BEVERLY BLVD, SUITE 746, LOS 
+              ANGELES CA 90048, LOS ANGELES CALIFORNIA, 90048</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>44. 3 EAST 57TH STREET</dt>
+            <dd>3 EAST 57TH STREET, NEW YORK, NY 10022, NEW YORK 
+              NEW YORK, 10022</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS, LIFESTYLE, FINE 
+              JEWELRY</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>45. WOODBURY COMMON PREMIUM OUTLETS</dt>
+            <dd>WOODBURY COMMON PREMIUM OUTLETS, 818 
+              GRAPEVINE CT, CENTRAL VALLEY NY 10917, CENTRAL 
+              VALLEY CALIFORNIA, 10917</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>46. WYNN</dt>
+            <dd>3131 LAS VEGAS BLVD. SOUTH, LAS VEGAS, NEVADA, LAS 
+              VEGAS NEVADA, 89109</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>47. ALA MOANA</dt>
+            <dd>ALA MOANA CENTER, 1450 ALA MOANA BLVD, SUITE 
+              #2825, HONOLULU HI, 96814, HONOLULU HAWAII, 96814</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>48. YSL BLOOMINGDALES NY</dt>
+            <dd>1000 THIRD AVE, NEW YORK NEW YORK, 10022</dd>
+            <dd>WOMEN'S ACCESSORIES</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>49. LIVERMORE PREMIUM</dt>
+            <dd>2902 LIVERMORE OUTLETS DRIVE, SAN FRANCISCO 
+              CALIFORNIA, 94551</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>50. ATLANTA PHIPPS PLAZA</dt>
+            <dd>3500 PEACHTREE ROAD NE, ATLANTA GEORGIA, 30326</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>51. ROYAL HAWAIIAN</dt>
+            <dd>2201 KALAKAUA AVE. SPACE NO. A102/103, HONOLULU 
+              HAWAII, 96815</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>52. SAWGRASS MILLS OUTLET</dt>
+            <dd>1840 SAWGRASS MILLS CIRCLE, SUNRISE, FLORIDA, 
+              SUNRISE FLORIDA, 33323</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>53. HOUSTON GALLERIA</dt>
+            <dd>HOUSTON GALLERIA, 5015 WESTHEIMER RD, SUITE 
+              A3201, HOUSTON, TX 77056, HOUSTON TEXAS, 77056</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>54. SAN MARCOS PREMIUM OUTLET</dt>
+            <dd>3939 IH-35 SOUTH, STE 1210, SAN MARCOS TEXAS, 78666</dd>
+            <dd>MEN'S AND WOMEN'S COLLECTIONS</dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <h2>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="Thank you for visiting Saint Laurent">
+        </a>
+      </h2>
+      <ul>
+        <li><a href="F01_client_service.html">CLIENT SERVICE</a></li>
+        <li><a href="F03_track_order.html">TRACK ORDER</a></li>
+        <li><a href="F02_email.html">EMAIL</a></li>
+        <li><a href="F04_store_locator.html">STORE LOCATOR</a></li>
+        <li><a href="L06_legal_notice.html">LEGAL NOTICES</a></li>
+        <li>
+          <input type="button" value="SUBSCRIBE TO THE NEWSLETTER" data-panel="newsPanel">
+        </li>
+      </ul>
+    </div>
+    <div id="newsPanel">
+      <input type="button" value="close" class="btn_close">
+      <h2>NEWSLETTER</h2>
+      <p>SUBSCRIBE TO THE SAINT LAURENT NEWSLETTER TO RECEIVE 
+        EXCLUSIVE INFORMATION ON NEW COLLECTIONS, FASHION 
+        SHOWS AND EVENTS.</p>
+      <span>REQUIRED FIELD</span>
+      <form>
+        <label>CIVILITY</label>
+        <select>
+          <option>PLEASE SELECT</option>
+          <option>MISS, MRS, MS</option>
+          <option>MR.</option>
+          <option>MX</option>
+          <option>I'D RATHER NOT SAY</option>
+        </select>
+        <label>EMAIL</label>
+        <input type="email" placeholder="EMAIL" required>
+        <input type="submit" value="SEND" class="btn_send">
+      </form>
+      <p>BY SIGNING UP BELOW, YOU AGREE TO STAY IN TOUCH WITH SAINT LAURENT. 
+        WE WILL USE YOUR PERSONAL INFORMATION TO PROVIDE YOU WITH 
+        TAILORED UPDATES ABOUT OUR ACTIVITIES, PRODUCTS AND SERVICES. FOR 
+        MORE INFORMATION ABOUT OUR PRIVACY PRACTICES AND YOUR RIGHTS, 
+        PLEASE CONSULT OUR PRIVACY POLICY.</p>
+    </div>
+    <div>
+      <span>© KERING 2019</span>
+      <div class="snsArea">
+        <ul>
+          <li><a href="https://pf.kakao.com/_rAMaxb">YSL kakaotalk</a></li>
+          <li><a href="https://www.facebook.com/ysl">YSL facebook</a></li>
+          <li><a href="https://www.twitter.com/ysl">YSL twitter</a></li>
+          <li><a href="https://www.instagram.com/ysl/">YSL instagram</a></li>
+          <li><a href="https://www.youtube.com/ysl">YSL youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

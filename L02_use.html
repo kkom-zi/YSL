@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ysl.js"></script>  
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <title>YSL</title>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <a href="index.html">ENJOY COMPLIMENTARY SHIPPING AND SIGNATURE SAINT LAURENT PACKAGING FOR ANY ORDER PLACED ON YSL.COM.</a>
+    </div>
+    <div class="panel">
+      <div id="searchPanel">
+        <input type="button" value="close" class="btn_close">
+        <input type="search" placeholder="SEARCH FOR PRODUCTS" autocomplete="" title="Search for products">
+        <h2>SUGGESTIONS</h2>
+        <ul>
+          <li><a href="women_NEW.html">NEW - WOMEN'S SUMMER 23</a></li>
+          <li><a href="men_NEW.html">NEW - MEN'S SPRING 23</a></li>
+          <li><a href="women_BAG_all-1.html">WOMEN'S HANDBAGS</a></li>
+          <li><a href="women_minibag.html">WOMEN'S MINI BAGS</a></li>
+          <li><a href="women_SHOES_all.html">WOMEN'S SHOES</a></li>
+        </ul>
+      </div>
+      <div id="wishPanel">
+        <h2>WISHLIST 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>JAMIE MEDIUM CHAIN BAG "CARRÉ RIVE GAUCHE" IN LAMBSKIN AND SUEDE</dt>
+              <dd>BLACK</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 3,300</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteWish">
+          </li>
+        </ul>
+        <p id="deleteWish">YOUR WISHLIST IS EMPTY.</p>
+        <div>
+          <a href="I10_myWishlist.html" class="btn_view">VIEW WISHIST</a>
+        </div>
+      </div>
+      <div id="cartPanel">
+        <h2>SHOPPING BAG 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>CASSANDRE MATELASSÉ CARD CASE IN GRAIN DE POUDRE EMBOSSED LEATHER</dt>
+              <dd>FUCHSIA</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 325</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteCart">
+          </li>
+        </ul>
+        <p id="deleteCart">YOUR CART IS EMPTY.</p>
+        <div>
+          <mark>ESTIMATED TOTAL</mark>
+          <strong>$ 325</strong>
+          <a href="CK01_checkOut.html" class="btn_check">CHECK OUT</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <h1>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="welcome to saint laurent">
+        </a>
+      </h1>
+      <nav id="muignb">
+        <input type="button" value="close" class="btn_close">
+        <ul>
+          <li>
+            <mark>SHOP WOMEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="women_NEW.html">NEW 2023</a></li>
+                <li><a href="women_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="women_RTW_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_jackets.html">JACKETS</a></li>
+                <li><a href="women_dresses.html">DRESSES &amp; SKIRTS</a></li>
+                <li><a href="women_shirts.html">SHIRTS &amp; BLOUSES</a></li>
+                <li><a href="women_trousers.html">TROUSERS &amp; SHORTS</a></li>
+                <li><a href="women_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="women_knitwear.html">KNITWEAR</a></li>
+                <li><a href="women_leather.html">LEATHER</a></li>
+                <li><a href="women_jersey.html">JERSEY</a></li>
+                <li><a href="women_denim.html">DENIM</a></li>
+                <li><a href="women_lingerie.html">LINGERIE</a></li>
+              </ol>
+              <ol>
+                <li><strong>BAGS</strong></li>                
+                <li><a href="women_BAG_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_hobobag.html">HOBO &amp; BUCKETS</a></li>
+                <li><a href="women_maxibag.html">MAXI BAGS</a></li>
+                <li><a href="women_totebag.html">TOTE &amp; SHOPPING</a></li>
+                <li><a href="women_clutches.html">CLUTCHES &amp; MINAUDIERES</a></li>
+                <li><a href="women_crossbodybag.html">CROSSBODY BAGS</a></li>
+                <li><a href="women_shoulderbag.html">SHOULDER BAGS</a></li>
+                <li><a href="women_tophandles.html">TOP HANDLES</a></li>
+                <li><a href="women_minibag.html">MINI BAGS</a></li>
+              </ol>
+              <ol>
+                <li><strong>SHOES</strong></li>
+                <li><a href="women_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="women_sandals.html">SANDALS</a></li>
+                <li><a href="women_pumps.html">PUMPS</a></li>
+                <li><a href="women_mules.html">MULES</a></li>
+                <li><a href="women_boots.html">BOOTS &amp; BOOTIES</a></li>
+                <li><a href="women_sneakers.html">SNEAKERS</a></li>
+                <li><a href="women_loafers.html">LOAFERS &amp; BALLERINAS</a></li>
+                <li><a href="women_wedges.html">ESPADRILLES &amp; WEDGES</a></li>
+              </ol>
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>               
+                <li><a href="women_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="women_scarves.html">SCARVES</a></li>
+                <li><a href="women_sunglasses.html">SUNGLASSES</a></li>
+                <li><a href="women_jewelry.html">JEWELLERY</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>SHOP MEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="men_NEW.html">NEW 2023</a></li>
+                <li><a href="men_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="men_RTW_all.html">VIEW ALL</a></li>
+                <li><a href="men_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="men_jackets.html">JACKETS &amp; PANTS</a></li>
+                <li><a href="men_shirts.html">SHIRTS</a></li>
+                <li><a href="men_knitwear.html">KNITWEAR</a></li>
+                <li><a href="men_jersey.html">JERSEY</a></li>
+              </ol>      
+              <ol>
+                <li><strong>BAGS</strong></li>
+                <li><a href="men_BAG_all.html">VIEW ALL</a></li>
+                <li><a href="men_backpacks.html">BACKPACKS</a></li>
+                <li><a href="men_camerabags.html">CAMERA BAGS</a></li>
+                <li><a href="men_messengers.html">MESSENGERS</a></li>
+                <li><a href="men_business.html">BUSINESS</a></li>
+                <li><a href="men_shoppingbags.html">SHOPPING BAGS</a></li>
+                <li><a href="men_trabelbags.html">TRABEL BAGS</a></li>
+              </ol>        
+              <ol>
+                <li><strong>SHOES</strong></li>               
+                <li><a href="men_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="men_boots.html">BOOTS</a></li>
+                <li><a href="men_sneakers.html">SNEAKERS</a></li>
+                <li><a href="men_loafers.html">LOAFERS &amp; DERBIES</a></li>
+                <li><a href="men_sandals.html">ESPADRILLES &amp; SANDALS</a></li>
+              </ol>     
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>
+                <li><a href="men_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="men_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="men_belts.html">BELTS</a></li>
+                <li><a href="men_jewelry.html">JEWELRY</a></li>
+                <li><a href="men_textile.html">TEXTILE ACCESSORIES</a></li>
+                <li><a href="men_sunglasses.html">SUNGLASSES</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>COLLECTIONS</mark>
+            <div class="col_wrap">
+              <div class="quote">
+                <p>"FASHIONS FADE BUT
+                  STYLE IS ETERNAL."</p>
+                <span>BY YVES SAINT LAURENT</span>
+              </div>
+              <ol>
+                <li>
+                  <a href="C01_women_winter23.html">
+                    WOMEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C03_men_winter23.html">
+                    MEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C02_women_summer23.html">
+                    WOMEN'S SUMMER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C04_men_springsummer23.html">
+                    MEN'S SPRING SUMMER 23
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li><mark><a href="sustainability.html">SUSTAINABILITY</a></mark></li>
+          <li><mark><a href="F01_client_service.html">CLIENT SERVICE</a></mark></li>
+        </ul>
+      </nav>
+      <div class="sideicon">
+        <form>
+          <fieldset>
+            <input type="button" value="search" data-panel="searchPanel">
+            <input type="button" value="wishlist" data-panel="wishPanel">
+            <a href="I01_sign_IN.html">my page</a>
+            <input type="button" value="cart" data-panel="cartPanel">
+            <span>+1</span>
+            <input type="button" value="menu" data-panel="muignb">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </header>
+  <div class="legal_use_Area">
+    <div>
+      <nav class="smallMenu">
+        <ol>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="L06_legal_notice.html">LEGAL NOTICES</a></li>
+          <li><a href="L02_use.html">TERMS AND CONDITION OF USE</a></li>
+        </ol>
+      </nav>
+      <aside>
+        <h2>LEGAL NOTICES</h2>
+        <ul>
+          <li><a href="L01_privacy.html">PRIVACY POLICY</a></li>
+          <li><a href="L02_use.html" class="currentPage">TERMS AND CONDITION OF USE</a></li>
+          <li><a href="L03_sale.html">TERMS AND CONDITIONS OF SALE</a></li>
+          <li><a href="L04_cookie.html">COOKIE POLICY</a></li>
+          <li><a href="L05_return.html">RETURN POLICY</a></li>
+          <li><a href="L06_legal_notice.html">LEGAL NOTICE</a></li>
+          <li><a href="L07_kering.html">MODERN SLAVERY ACT KERING STATEMENT</a></li>
+          <li><a href="L08_accessibility.html">WEB ACCESSIBILITY</a></li>
+          <li><a href="L09_supply.html">TRANSPARENCY IN SUPPLY CHAINS</a></li>
+        </ul>
+      </aside>
+      <section>
+        <h3>TERMS OF USE OF THE WEBSITE </h3>
+        <span>DATE: SEPTEMBER 2021</span>
+        <p>WELCOME TO HTTPS://WWW.YSL.COM/US (”WEBSITE”).</p>
+        <p>THE WEBSITE IS OWNED AND OPERATED BY YVES SAINT LAURENT, A COMPANY INCORPORATED UNDER THE LAWS OF FRANCE WITH A SHARE CAPITAL 
+          OF 123.810.775 €, REGISTERED WITH THE PARIS TRADE AND CORPORATE REGISTER UNDER UNIQUE IDENTIFICATION NUMBER 342 547 361, WITH REGISTERED 
+          OFFICE AT 37-39 RUE DE BELLECHASSE 75007 PARIS (“SAINT LAURENT” OR “WE”, “US”, “OUR”).</p>
+        <strong>PLEASE READ THE FOLLOWING TERMS OF USE OF THE WEBSITE (THE “TOU”) CAREFULLY BEFORE USING THE WEBSITE.</strong>
+        <p>THESE TOU APPLIES TO YOUR ACCESS TO, AND USE OF, THE WEBSITE, AND THE SERVICES AVAILABLE THROUGH THE WEBSITE (“SERVICES”).</p>
+        <p>WHEN ACCESSING THE WEBSITE AND USING THE SERVICES FOR THE FIRST TIME, YOU WILL BE ASKED TO AGREE TO THESE TOU. IF YOU DO NOT AGREE 
+          TO BE BOUND BY THESE TOU, YOU MUST CEASE USING THE WEBSITE OR THE SERVICES .</p>
+        <p>WE RESERVE THE RIGHT TO AMEND OR UPDATE ALL OR PART OF THESE TOU FROM TIME TO TIME AT OUR DISCRETION. WE WILL ALWAYS POST THE 
+          MOST CURRENT VERSION OF THESE TOU ON THE WEBSITE AND DISPLAY THE “LAST UPDATED” DATE TO REFLECT THE DATE OF THE CHANGES. PLEASE 
+          CONSULT THESE TOU FROM TIME TO TIME TO TAKE NOTICE OF ANY CHANGES WE MADE, AS THEY ARE BINDING TO YOU.</p>
+        <p>PLEASE NOTE THAT, WHEN VISITING THE WEBSITE FOR THE FIRST TIME AFTER CHANGES TO THE TOU HAVE BEEN UPLOADED, YOU WILL BE ASKED TO 
+          AGREE TO THE UPDATED TOU. IF YOU DO NOT AGREE WITH THE REVISED TOU, PLEASE STOP USING THE WEBSITE.</p>
+        <ol>
+          <li>
+            <b>1. ACCESSING THE WEBSITE, REGISTRATION AND SUBSCRIPTION TO THE SERVICES</b>
+            <p>1.1. YOU ARE RESPONSIBLE FOR MAKING ALL THE NECESSARY ARRANGEMENTS FOR YOU TO HAVE ACCESS TO THE WEBSITE. YOU MAY SET-UP AN 
+              ACCOUNT OR SUBSCRIBE ON THE WEBSITE TO OUR SERVICES AS AVAILABLE FROM TIME TO TIME, USING AN EMAIL ADDRESS AND PASSWORD 
+              (“ACCOUNT DETAILS”). YOU ARE RESPONSIBLE FOR MAINTAINING THE CONFIDENTIALITY AND SECURITY OF YOUR ACCOUNT DETAILS AND ACCEPT 
+              SOLE RISK FOR ALL ACTIVITIES THAT OCCUR UNDER THEM (INCLUDING THE ACTIVITIES OF PERSONS WHO ACCESS OUR WEBSITE USING YOUR 
+              ACCOUNT DETAILS). YOU AGREE TO NOTIFY US IF YOU BECOME AWARE OF, OR SUSPECT, ANY UNAUTHORIZED USE OF YOUR ACCOUNT DETAILS. ANY 
+              INFORMATION AND DETAILS PROVIDED BY YOU TO US MUST BE ACCURATE, TRUE AND UP TO DATE IN ALL RESPECTS AND AT ALL TIMES.</p>
+            <p>1.2. THE SERVICES ARE GENERALLY NOT INTENDED FOR PERSONS UNDER THE AGE OF MAJORITY IN YOUR COUNTRY/REGION OR FOR ADULTS UNDER 
+              GUARDIANSHIP. IF YOU ARE UNDER THIS AGE, PLEASE DO NOT USE THE WEBSITE OR REGISTER FOR, OR SUBSCRIBE TO, THE SERVICES. IF WE LEARN THAT 
+              YOU ARE UNDER THIS AGE (OR FRAUDULENTLY MISREPRESENTED YOUR AGE DURING THE REGISTRATION OR SUBSCRIPTION PROCESS), WE WILL 
+              PROMPTLY CANCEL YOUR REGISTRATION, OR SUBSCRIPTION, IF ANY, AND STOP PROVIDING YOU WITH THE SERVICES. WE ADVISE PARENTS OR 
+              GUARDIANS OF MINORS OR GUARDIANS OF ADULTS UNDER GUARDIANSHIP USING THE WEBSITE THAT IS IMPORTANT THAT THEY COMMUNICATE WITH 
+              SUCH MINORS OR ADULTS UNDER GUARDIANSHIP, AS APPLICABLE, ABOUT THEIR SAFETY ONLINE AND POTENTIAL RISKS ON THEM.</p>
+          </li>
+          <li>
+            <b>2. PRIVACY AND COOKIE POLICIES</b>
+            <p>2.1 OUR PRIVACY POLICY GOVERNS THE USE AND PROCESSING OF THE PERSONAL DATA WE COLLECT FROM, OR PROVIDED BY, YOU THROUGH THE 
+              WEBSITE. BEFORE UPLOADING OR PROVIDING ANY PERSONAL DATA TO THE WEBSITE, PLEASE READ CAREFULLY OUR PRIVACY POLICY <a href="L01_privacy.html">HTTPS://WWW.YSL.COM/EN-US/LEGAL-NOTICES/PRIVACY-POLICY/PRIVACY-POLICY.HTML</a>.</p>
+            <p>2.2 THE WEBSITE USES COOKIES TO MONITOR BROWSING PREFERENCES. IF YOU HAVE ALLOWED COOKIES TO BE USED, PLEASE CONSULT OUR COOKIE 
+              POLICY <a href="L04_cookie.html">HTTPS://WWW.YSL.COM/EN-US/LEGAL-NOTICES/COOKIE-POLICY/COOKIE-POLICY.HTML</a> TO FIND OUT THE TYPE OF PERSONAL DATA THAT MAY 
+              BE PROCESSED BY US.</p>
+          </li>
+          <li>
+            <b>3. USE OF THE WEBSITE</b>
+            <p>3.1 YOU AGREE THAT IN USING THE WEBSITE, YOU WILL NOT :</p>
+            <ol>
+              <li>A. PROVIDE FALSE OR OTHERWISE MISLEADING INFORMATION OR IMPERSONATE ANOTHER PERSON;</li>
+              <li>B. USE ANYONE ELSE’S ACCOUNT WITHOUT THE PERMISSION OF THE ACCOUNT HOLDER;</li>
+              <li>C. USE THE WEBSITE IN ANY WAY THAT INTERRUPTS, CAUSES OR MAY CAUSE DAMAGE TO THE WEBSITE, IMPAIRS THE WEBSITE’S AVAILABILITY OR 
+                ACCESSIBILITY OR RENDERS THE WEBSITE LESS EFFICIENT;</li>
+              <li>D. CIRCUMVENT OR ATTEMPT TO CIRCUMVENT THE WEBSITE’S SECURITY MEASURES AND TAMPER WITH THE TECHNOLOGY THAT FORMS PART OF THE 
+                WEBSITE;</li>
+              <li>E. OBTAIN OR ATTEMPT TO OBTAIN ANY INFORMATION, MATERIALS OR DOCUMENTS NOT PURPOSELY MADE AVAILABLE THROUGH THE WEBSITE 
+                THROUGH ANY MEANS (SUCH AS PERSONAL DATA, FINANCIAL OR OTHER CONFIDENTIAL OR SENSITIVE INFORMATION);</li>
+              <li>F. BREACH ANY APPLICABLE LAW;</li>
+              <li>G. USE THE WEBSITE FOR ANY UNLAWFUL PURPOSE OR IN A WAY WHICH INFRINGES THE RIGHTS OF ANY THIRD PARTIES;</li>
+              <li>H. UPLOAD, POST OR OTHERWISE TRANSMIT VIA THE WEBSITE ANY CONTENT THAT:
+                <ol>
+                  <li>(I) IS MISLEADING, HARMFUL, THREATENING, ABUSIVE, HARASSING, DEFAMATORY, OFFENSIVE, VIOLENT, OBSCENE, PORNOGRAPHIC, VULGAR, 
+                    LIBELLOUS, RACIALLY, ETHNICALLY, RELIGIOUSLY OR OTHERWISE INAPPROPRIATE;</li>
+                  <li>(II) CONSTITUTES UNAUTHORIZED DISCLOSURE OF PERSONAL DATA OR CONFIDENTIAL INFORMATION;</li>
+                  <li>(III) INFRINGES THE INTELLECTUAL PROPERTY RIGHTS OF ANY PARTY;</li>
+                  <li>(IV) CONTAINS VIRUSES OR OTHER FORM OF MALWARE.</li>
+                </ol>
+              </li>
+            </ol>
+            <p>3.2 WE RESERVE THE RIGHT TO CANCEL YOUR REGISTRATION OR SUBSCRIPTION, AND/OR BLOCK YOUR ACCOUNT AND/OR DENY, RESTRICT, SUSPEND, 
+              OR TERMINATE YOUR ACCESS TO THE WEBSITE AND TO THE SERVICES AT ANY TIME, WITHOUT NOTICE AND WITHOUT LIABILITY TO YOU, IF YOUR USE 
+              OF THE WEBSITE IS IN BREACH OF ANY OF YOUR OBLIGATIONS UNDER THESE TOU, OR ANY OTHER PROVISIONS OF THESE TOU, WITHOUT PREJUDICE 
+              TO ANY OTHER REMEDIES AVAILABLE TO US UNDER APPLICABLE LAW AND UNDER THESE TOU.</p>
+          </li>
+          <li>
+            <b>4. ELECTRONIC SERVICES</b>
+            <p>CERTAIN PARTS OF THE SERVICES MAY NEED TO BE PROVIDED THROUGH ELECTRONIC COMMUNICATION CHANNELS (E.G. E-MAIL, SMS, PHONE). YOU 
+              AGREE THAT WE MAY CONTACT YOU FOR SERVICES - RELATED ISSUES - BY SMS, E-MAIL OR OTHER ELECTRONIC TECHNOLOGY AND YOU 
+              ACKNOWLEDGE THAT, IN SOME JURISDICTIONS, USE OF THE MOBILE SERVICES MAY RESULT IN CHARGES IMPOSED ON YOU BY YOUR NETWORK 
+              PROVIDER AND THAT YOU WILL BE RESPONSIBLE FOR SUCH CHARGES.</p>
+          </li>
+          <li>
+            <b>5. INTELLECTUAL PROPERTY RIGHTS</b>
+            <p>5.1 OUR WEBSITE AND ALL OF THE INFORMATION AND MATERIALS INCLUDED ON IT INCLUDING THE DESIGN, LAYOUT, LOOK, APPEARANCE, GRAPHICS, 
+              ORGANIZATION OF THE CONTENTS OF THE WEBSITE, PHOTOGRAPHS, IMAGES, ILLUSTRATIONS, TEXT, FONTS, VIDEO, MUSIC, SOUND, AUDIO CLIPS, 
+              LOGOS, TRADEMARKS - WHETHER THEY ARE REGISTERED OR NOT, FIGURATIVE OR NOT - ALL OTHER MARKS, SERVICE MARKS, BRAND NAMES, TRADE OR 
+              BUSINESS NAMES, DOMAIN NAMES AND URLS, SOFTWARE (“ CONTENT”) ARE EITHER OWNED OR LICENSED BY US, AND ARE PROTECTED BY APPLICABLE 
+              COPYRIGHT, TRADEMARK, PATENT OR OTHER INTELLECTUAL PROPERTY LAWS AROUND THE WORLD. WE RESERVE ALL SUCH RIGHTS.</p>
+            <p>5.2 YOU ARE PERMITTED TO DOWNLOAD AND PRINT CONTENT FROM THE WEBSITE FOR YOUR PERSONAL USE BUT ARE NOT ALLOWED TO USE SUCH 
+              CONTENT FOR ANY COMMERCIAL OR BUSINESS PURPOSES. YOU MUST NOT COPY OR REPRODUCE (EXCEPT WHERE THE COPY OR REPRODUCTION IS 
+              MADE FOR PERSONAL NON-COMMERCIAL USE), PUBLISH, DISCLOSE, DISTRIBUTE, PROVIDE TO THE PUBLIC, REPUBLISH, COMMUNICATE, DISPLAY, 
+              REMOVE, DELETE, ADD TO, THE WEBSITE CONTENT OR CREATE DERIVATIVE WORKS OF ANY OF THE WEBSITE CONTENT FOR ANY PURPOSE, UNLESS 
+              AUTHORIZED TO DO SO IN WRITING BY US OR OUR LICENSORS.</p>
+            <p>5.3 ANY USE WHICH IS NOT EXPRESSLY PERMITTED BY THESE TOU IS PROHIBITED. UNAUTHORIZED USE OF THE WEBSITE OR THE CONTENT CONTAINED 
+              ON IT MAY VIOLATE APPLICABLE INTELLECTUAL PROPERTY LAWS OR OTHER LAWS.</p>
+          </li>
+          <li>
+            <b>6. SUBMITTED MATERIALS</b>
+            <p>6.1. WE APPRECIATE HEARING FROM YOU. YOU ACKNOWLEDGE AND AGREE THAT ANY SUGGESTION, PROPOSAL, CREATIVE IDEAS, CONCEPTS, PHOTOS, 
+              TEXT OR ANY OTHER CONTENTS AND MATERIALS (WITH THE EXCEPTION OF PERSONAL INFORMATION) UPLOADED OR SENT TO US THROUGH THIS 
+              WEBSITE OR OTHERWISE (“ SUBMITTED MATERIALS”) WILL BE CONSIDERED NON CONFIDENTIAL AND NON-PROPRIETARY. YOU RETAIN ALL OF YOUR 
+              OWNERSHIP RIGHTS IN THE SUBMITTED MATERIALS, BUT BY UPLOADING SUBMITTED MATERIALS, UNLESS OTHERWISE EXPLICITLY STATED BY YOU, YOU 
+              HEREBY GRANT US A WORLDWIDE, IRREVOCABLE, FREE OF CHARGE, NON-EXCLUSIVE LICENSE TO USE, OPERATE, STORE, COPY, REPRODUCE, MODIFY, 
+              PUBLISH, DISTRIBUTE AND MAKE IT AVAILABLE TO THIRD PARTIES ANY SUCH SUBMITTED MATERIALS, OR ANY PART THEREOF, IN ANY FORM AND MEDIA 
+              NOW KNOWN OR WHICH SHALL BECOME KNOWN IN THE FUTURE FOR ANY PURPOSE, INCLUDING ADVERTISING, PROMOTIONAL OR PRODUCTS 
+              DEVELOPMENT OR OTHER COMMERCIAL PURPOSES, AND FOR THE DURATION OF PROTECTION OF SUCH SUBMITTED MATERIALS.</p>
+            <p>6.2. WHENEVER YOU UPLOAD CONTENT OR SUBMITTED MATERIALS TO OUR WEBSITE, OR MAKE CONTACT WITH OTHER USERS OF OUR WEBSITE, YOU 
+              MUST COMPLY WITH THE “USE OF THE WEBSITE” PROVISIONS SET OUT ABOVE IN SECTION 3.1.</p>
+            <p>6.3. YOU ARE FULLY RESPONSIBLE FOR THE CONTENT OR ACCURACY OF ANY SUBMITTED MATERIAL OR ANY POSTINGS YOU MAKE.</p>
+            <p>6.4. WE RESERVE THE RIGHT TO REJECT OR DELETE ANY SUBMITTED MATERIALS OR REMOVE ANY POSTINGS YOU MAKE ON THE WEBSITE, FOR ANY OR 
+              NO REASONS, INCLUDING IF SUCH SUBMITTED MATERIALS OR POSTINGS, IN OUR JUDGMENT, VIOLATE THESE TOU AND IN PARTICULAR DO NOT 
+              COMPLY WITH THE “USE OF THE WEBSITE” PROVISIONS SET OUT ABOVE IN SECTION 3.1.</p>
+          </li>
+          <li>
+            <b>7. LINKS</b>
+            <strong>LINKS TO THIRD PARTY SITES</strong>
+            <p>7.1 THE WEBSITE MAY INCLUDE LINKS TO THIRD-PARTIES’ WEBSITES (“ LINKED SITES”). WE HAVE NO CONTROL OVER SUCH LINKED SITES AND WILL NOT 
+              BE RESPONSIBLE OR LIABLE FOR THE AVAILABILITY OF THE LINKED SITES OR FOR THEIR CONTENT.</p>
+            <p>7.2 THESE LINKS ARE PROVIDED SOLELY FOR YOUR CONVENIENCE TO PROVIDE FURTHER INFORMATION AND THE INCLUSION OF SUCH LINKS DOES 
+              NOT CONSTITUTE, AND SHOULD NOT BE INTERPRETED AS, IN ANY WAY, AN ENDORSEMENT BY US OF SUCH LINKED SITES OR THEIR CONTENTS, 
+              PRODUCTS OR SERVICES, THEIR PRIVACY AND SECURITY PRACTICES OR THE MANNER IN WHICH THEY CONDUCT THEIR OPERATIONS. IF YOU CHOOSE TO 
+              ACCESS LINKED SITES, YOU DO THIS AT YOUR OWN RISK. YOUR USE OF LINKED SITES IS SUBJECT TO THE TERMS AND CONDITIONS OF THE THIRD 
+              PARTIES OPERATING AND PROVIDING THEM. ANY QUESTION OR COMMENT RELATED TO THESE LINKED SITES MUST BE ADDRESSED TO THE RELEVANT 
+              OPERATORS.</p>
+            <strong>LINKS TO OUR WEBSITE</strong>
+            <p>7.3 YOU ARE NOT PERMITTED TO FRAME THE WEBSITE OR ITS CONTENT ON ANY OTHER WEBSITE, OR TO LINK TO OUR WEBSITE, ANY PAGE OF IT 
+              AND/OR TO THE CONTENT, WITHOUT OUR PRIOR WRITTEN CONSENT.</p>
+          </li>
+          <li>
+            <b>8. EXCLUSION OF WARRANTIES</b>
+            <p>8.1 THIS WEBSITE, ITS CONTENT AND SERVICES ARE PROVIDED FREE OF CHARGE ON AN “AS-IS” AND “AS AVAILABLE” BASIS. ALTHOUGH WE MAKE ALL 
+              REASONABLE EFFORTS TO ENSURE THAT THE WEBSITE IS ACCESSIBLE AT ALL TIMES (EXCEPT DURING MAINTENANCE) AND SECURE WE EXCLUDE, ALL 
+              WARRANTIES OR GUARANTEES IN CONNECTION WITH THIS WEBSITE, ITS CONTENT OR SERVICES, TO THE EXTENT PERMITTED BY LAW. BY WAY OF 
+              EXAMPLE, WE DO NOT GUARANTEE THAT THE WEBSITE WILL ALWAYS BE AVAILABLE, WITHOUT INTERRUPTION OR ERRORS IN FUNCTIONING, OR THAT 
+              IT WILL BE SAFE FROM MALICIOUS PROGRAMS (SUCH AS VIRUSES, BUGS, MALWARE OR SIMILAR), OR THAT IT IS SUITABLE FOR ANY PARTICULAR 
+              PURPOSES, AND EXPRESSLY DECLINES ANY SUCH WARRANTIES.</p>
+            <p>8.2 WE WORK TO ENSURE THAT THE INFORMATION MADE AVAILABLE THROUGH THE WEBSITE IS ACCURATE AND UP TO DATE. HOWEVER, WE CANNOT 
+              GUARANTEE THE ACCURACY OF SUCH INFORMATION (INCLUDING THE CONTENT) OR THAT SUCH INFORMATION IS FREE FROM ERRORS OR OMISSIONS 
+              AND WE MAKE NO WARRANTY, AND SHALL HAVE NO LIABILITY, IN RESPECT OF THE SAME. WE RESERVE THE RIGHT TO UPDATE AND/OR CORRECT THE 
+              INFORMATION, CONTENT OR THE WEBSITE AT ANY TIME WITHOUT NOTICE AND WITHOUT ANY LIABILITY.</p>
+          </li>
+          <li>
+            <b>9. LIMITATION OF LIABILITY</b>
+            <p>9.1 WE ACCEPT LIABILITY TO YOU FOR DIRECT LOSSES AND DAMAGES CAUSED BY OUR BREACH OF OUR OBLIGATIONS UNDER THESE TOU. SUBJECT TO 
+              SECTION 9.3 BELOW, OUR AGGREGATE LIABILITY UNDER THESE TOU SHALL IN NO EVENT EXCEED THE PRICE OF THE PRODUCT PURCHASED BY YOU ON 
+              THE WEBSITE.</p>
+            <p>9.2 TO THE MAXIMUM EXTENT PERMITTED BY LAW, YOU ALSO UNDERTAKE THAT YOU WILL NOT CLAIM ANY POSSIBLE COMPENSATION FROM US, OUR 
+              LICENSORS, SERVICE PROVIDERS, DISTRIBUTORS, MANAGERS OR DIRECTORS IN ANY FORM, INCLUDING BUT NOT LIMITED TO :</p>
+            <ol>
+              <li>(I) LOSSES AND DAMAGES NOT CAUSED BY OUR BREACH;</li>
+              <li>(II) INDIRECT LOSSES AND DAMAGES;</li>
+              <li>(III) LOSSES OR DAMAGES ARISING OUT OR RESULTING FROM THE USE OF THE WEBSITE, THE SERVICES, THE CONTENT, ANY LINKED SITE OR THE 
+                INABILITY TO USE THE SAME, OR IN CONNECTION WITH ANY FAILURE OF PERFORMANCE, DELAY IN OPERATION AND TRANSMISSION, INTERRUPTION, 
+                ERROR, OMISSION, VIRUS OR WEBSITE FAILURE;</li>
+              <li>(IV) LOSSES OR DAMAGES WHICH YOU MAY INCUR, INCLUDING WITHOUT LIMITATION AS A RESULT OF :
+                <ol>
+                  <li>(A) YOUR FAILURE TO SAFEGUARD YOUR ACCOUNT DETAILS,</li>
+                  <li>(B) ANY RELIANCE PLACED BY YOU ON THE ACCURACY AND COMPLETENESS OF THE WEBSITE, THE CONTENT OR THE SUBMITTED MATERIAL, OR</li>
+                  <li>(C) ANY CHANGES WE MAY MAKE TO THE WEBSITE, THE SERVICES AND THE CONTENT, OR</li>
+                  <li>(D) ANY TEMPORARY INTERRUPTION OR PERMANENT CESSATION IN THE PROVISION OF THE SERVICES AND CONTENT;</li>
+                </ol>
+              </li>
+              <li>(V) FAILURE TO MEET ANY OF OUR OBLIGATIONS UNDER THESE TOU WHERE SUCH FAILURE IS DUE TO A FORCE MAJEURE EVENT OR AN EVENT 
+                OUTSIDE OF OUR REASONABLE CONTROL.</li>
+            </ol>
+            <p>9.3 NOTHING IN THESE TOU LIMITS OR EXCLUDES OUR LIABILITY FOR (I) DEATH AND PERSONAL INJURY CAUSED BY OUR NEGLIGENCE; (II) FOR FRAUD, 
+              FRAUDULENT MISREPRESENTATION AND GROSS NEGLIGENCE OR (III) FOR ANY OTHER LIABILITY WHICH CANNOT BE LIMITED OR EXCLUDED BY 
+              APPLICABLE LAW.</p>
+            <p>9.4 AS THE SERVICES ARE PROVIDED FREE OF CHARGE, YOU ARE RESPONSIBLE FOR EVALUATING THE INFORMATION AND CONTENT OBTAINED 
+              THROUGH THE WEBSITE. BY USING THE WEBSITE, YOU UNDERTAKE ALL RISKS CONNECTED TO THE RELEVANT USE AND TO TAKE FULL RESPONSIBILITY 
+              FOR ANY FAILURE IN THE USE, LOSS OF DATA, AND COSTS ASSOCIATED WITH ALL NECESSARY SERVICES AND MAINTENANCE OF HARDWARE AND/OR 
+              SOFTWARE.</p>
+          </li>
+          <li>
+            <b>10. DISCLAIMER</b>
+            <p>TO THE EXTENT PERMITTED BY APPLICABLE LAW, YOU AGREE TO COMPENSATE US, OUR SUBSIDIARIES AND AFFILIATES, AND THEIR RESPECTIVE 
+              DIRECTORS, NON-EXECUTIVE DIRECTORS AND EMPLOYEES AGAINST ANY LOSS, LIABILITY, CLAIM OR REQUIREMENT (EVEN IF CLAIMED BY THIRD 
+              PARTIES) CAUSED BY YOUR BREACH OF THESE TOU USING THIS WEBSITE AND ITS SERVICES, AND/OR YOUR BREACH OF THESE TOU, AND/OR ANY 
+              BREACH OR YOUR REPRESENTATION AND WARRANTIES UNDER THESE TOU, INCLUDING REASONABLE ATTORNEY’S FEES AND/OR ANY LIABILITY TO 
+              THIRD PARTIES CAUSED BY SUBMITTED MATERIALS DURING SERVICES’ TRANSMISSION.</p>
+          </li>
+          <li>
+            <b>11. GOVERNING LAW AND JURISDICTION</b>
+            <p>11.1 THESE TOU AND ANY MATTER RELATING TO YOUR ACCESS TO, OR USE OF, THE WEBSITE SHALL BE GOVERNED BY AND WILL BE INTERPRETED IN 
+              ACCORDANCE WITH THE LAWS OF NEW YORK.</p>
+            <p>11.2 YOU AND WE AGREE TO SUBMIT ANY DISPUTE ARISING OUT OF, OR RELATING TO, THESE TOU INCLUDING THE VALIDITY, INTERPRETATION, BREACH 
+              OR TERMINATION THEREOF, TO THE JURISDICTION OF THE RELEVANT COURTS IN NEW YORK.</p>
+          </li>
+          <li>
+            <b>12. CONTACT US</b>
+            <p>YOU CAN CONTACT US IN ONE OF THE FOLLOWING WAYS :</p>
+            <ul>
+              <li>BY POST AT SAINT LAURENT 3 EAST 57TH STREET 10022 NEW YORK, UNITED STATES</li>
+              <li>BY TELEPHONE AT + 1646 889 1961</li>
+              <li>BY EMAIL AT CLIENTSERVICE.US@YSL.COM</li>
+            </ul>
+            <p>YOU MAY ALSO GO TO THE “CLIENT SERVICES” PAGE ON THE WEBSITE TO LEAVE A WEB MESSAGE AND WE WILL REPLY TO YOU VIA EMAIL.</p>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <h2>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="Thank you for visiting Saint Laurent">
+        </a>
+      </h2>
+      <ul>
+        <li><a href="F01_client_service.html">CLIENT SERVICE</a></li>
+        <li><a href="F03_track_order.html">TRACK ORDER</a></li>
+        <li><a href="F02_email.html">EMAIL</a></li>
+        <li><a href="F04_store_locator.html">STORE LOCATOR</a></li>
+        <li><a href="L06_legal_notice.html">LEGAL NOTICES</a></li>
+        <li>
+          <input type="button" value="SUBSCRIBE TO THE NEWSLETTER" data-panel="newsPanel">
+        </li>
+      </ul>
+    </div>
+    <div id="newsPanel">
+      <input type="button" value="close" class="btn_close">
+      <h2>NEWSLETTER</h2>
+      <p>SUBSCRIBE TO THE SAINT LAURENT NEWSLETTER TO RECEIVE 
+        EXCLUSIVE INFORMATION ON NEW COLLECTIONS, FASHION 
+        SHOWS AND EVENTS.</p>
+      <span>REQUIRED FIELD</span>
+      <form>
+        <label>CIVILITY</label>
+        <select>
+          <option>PLEASE SELECT</option>
+          <option>MISS, MRS, MS</option>
+          <option>MR.</option>
+          <option>MX</option>
+          <option>I'D RATHER NOT SAY</option>
+        </select>
+        <label>EMAIL</label>
+        <input type="email" placeholder="EMAIL" required>
+        <input type="submit" value="SEND" class="btn_send">
+      </form>
+      <p>BY SIGNING UP BELOW, YOU AGREE TO STAY IN TOUCH WITH SAINT LAURENT. 
+        WE WILL USE YOUR PERSONAL INFORMATION TO PROVIDE YOU WITH 
+        TAILORED UPDATES ABOUT OUR ACTIVITIES, PRODUCTS AND SERVICES. FOR 
+        MORE INFORMATION ABOUT OUR PRIVACY PRACTICES AND YOUR RIGHTS, 
+        PLEASE CONSULT OUR PRIVACY POLICY.</p>
+    </div>
+    <div>
+      <span>© KERING 2019</span>
+      <div class="snsArea">
+        <ul>
+          <li><a href="https://pf.kakao.com/_rAMaxb">YSL kakaotalk</a></li>
+          <li><a href="https://www.facebook.com/ysl">YSL facebook</a></li>
+          <li><a href="https://www.twitter.com/ysl">YSL twitter</a></li>
+          <li><a href="https://www.instagram.com/ysl/">YSL instagram</a></li>
+          <li><a href="https://www.youtube.com/ysl">YSL youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

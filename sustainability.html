@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/ysl.js"></script>  
+  <link rel="stylesheet" href="css/import.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <title>YSL</title>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <a href="index.html">ENJOY COMPLIMENTARY SHIPPING AND SIGNATURE SAINT LAURENT PACKAGING FOR ANY ORDER PLACED ON YSL.COM.</a>
+    </div>
+    <div class="panel">
+      <div id="searchPanel">
+        <input type="button" value="close" class="btn_close">
+        <input type="search" placeholder="SEARCH FOR PRODUCTS" autocomplete="" title="Search for products">
+        <h2>SUGGESTIONS</h2>
+        <ul>
+          <li><a href="women_NEW.html">NEW - WOMEN'S SUMMER 23</a></li>
+          <li><a href="men_NEW.html">NEW - MEN'S SPRING 23</a></li>
+          <li><a href="women_BAG_all-1.html">WOMEN'S HANDBAGS</a></li>
+          <li><a href="women_minibag.html">WOMEN'S MINI BAGS</a></li>
+          <li><a href="women_SHOES_all.html">WOMEN'S SHOES</a></li>
+        </ul>
+      </div>
+      <div id="wishPanel">
+        <h2>WISHLIST 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>JAMIE MEDIUM CHAIN BAG "CARRÉ RIVE GAUCHE" IN LAMBSKIN AND SUEDE</dt>
+              <dd>BLACK</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 3,300</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteWish">
+          </li>
+        </ul>
+        <p id="deleteWish">YOUR WISHLIST IS EMPTY.</p>
+        <div>
+          <a href="I10_myWishlist.html" class="btn_view">VIEW WISHIST</a>
+        </div>
+      </div>
+      <div id="cartPanel">
+        <h2>SHOPPING BAG 1 ITEMS</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>CASSANDRE MATELASSÉ CARD CASE IN GRAIN DE POUDRE EMBOSSED LEATHER</dt>
+              <dd>FUCHSIA</dd>
+              <dd>SIZE : -</dd>
+              <dd><strong>$ 325</strong></dd>
+            </dl>
+            <input type="button" value="delete" data-card="deleteCart">
+          </li>
+        </ul>
+        <p id="deleteCart">YOUR CART IS EMPTY.</p>
+        <div>
+          <mark>ESTIMATED TOTAL</mark>
+          <strong>$ 325</strong>
+          <a href="CK01_checkOut.html" class="btn_check">CHECK OUT</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <h1>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="welcome to saint laurent">
+        </a>
+      </h1>
+      <nav id="muignb">
+        <input type="button" value="close" class="btn_close">
+        <ul>
+          <li>
+            <mark>SHOP WOMEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="women_NEW.html">NEW 2023</a></li>
+                <li><a href="women_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="women_RTW_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_jackets.html">JACKETS</a></li>
+                <li><a href="women_dresses.html">DRESSES &amp; SKIRTS</a></li>
+                <li><a href="women_shirts.html">SHIRTS &amp; BLOUSES</a></li>
+                <li><a href="women_trousers.html">TROUSERS &amp; SHORTS</a></li>
+                <li><a href="women_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="women_knitwear.html">KNITWEAR</a></li>
+                <li><a href="women_leather.html">LEATHER</a></li>
+                <li><a href="women_jersey.html">JERSEY</a></li>
+                <li><a href="women_denim.html">DENIM</a></li>
+                <li><a href="women_lingerie.html">LINGERIE</a></li>
+              </ol>
+              <ol>
+                <li><strong>BAGS</strong></li>                
+                <li><a href="women_BAG_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_hobobag.html">HOBO &amp; BUCKETS</a></li>
+                <li><a href="women_maxibag.html">MAXI BAGS</a></li>
+                <li><a href="women_totebag.html">TOTE &amp; SHOPPING</a></li>
+                <li><a href="women_clutches.html">CLUTCHES &amp; MINAUDIERES</a></li>
+                <li><a href="women_crossbodybag.html">CROSSBODY BAGS</a></li>
+                <li><a href="women_shoulderbag.html">SHOULDER BAGS</a></li>
+                <li><a href="women_tophandles.html">TOP HANDLES</a></li>
+                <li><a href="women_minibag.html">MINI BAGS</a></li>
+              </ol>
+              <ol>
+                <li><strong>SHOES</strong></li>
+                <li><a href="women_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="women_sandals.html">SANDALS</a></li>
+                <li><a href="women_pumps.html">PUMPS</a></li>
+                <li><a href="women_mules.html">MULES</a></li>
+                <li><a href="women_boots.html">BOOTS &amp; BOOTIES</a></li>
+                <li><a href="women_sneakers.html">SNEAKERS</a></li>
+                <li><a href="women_loafers.html">LOAFERS &amp; BALLERINAS</a></li>
+                <li><a href="women_wedges.html">ESPADRILLES &amp; WEDGES</a></li>
+              </ol>
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>               
+                <li><a href="women_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="women_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="women_scarves.html">SCARVES</a></li>
+                <li><a href="women_sunglasses.html">SUNGLASSES</a></li>
+                <li><a href="women_jewelry.html">JEWELLERY</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>SHOP MEN</mark>
+            <div class="gnb_wrap">
+              <ol class="style">
+                <li><a href="men_NEW.html">NEW 2023</a></li>
+                <li><a href="men_looks.html">LOOKS</a></li>
+              </ol>
+              <ol>
+                <li><strong>READY TO WEAR</strong></li>
+                <li><a href="men_RTW_all.html">VIEW ALL</a></li>
+                <li><a href="men_outerwear.html">OUTERWEAR</a></li>
+                <li><a href="men_jackets.html">JACKETS &amp; PANTS</a></li>
+                <li><a href="men_shirts.html">SHIRTS</a></li>
+                <li><a href="men_knitwear.html">KNITWEAR</a></li>
+                <li><a href="men_jersey.html">JERSEY</a></li>
+              </ol>      
+              <ol>
+                <li><strong>BAGS</strong></li>
+                <li><a href="men_BAG_all.html">VIEW ALL</a></li>
+                <li><a href="men_backpacks.html">BACKPACKS</a></li>
+                <li><a href="men_camerabags.html">CAMERA BAGS</a></li>
+                <li><a href="men_messengers.html">MESSENGERS</a></li>
+                <li><a href="men_business.html">BUSINESS</a></li>
+                <li><a href="men_shoppingbags.html">SHOPPING BAGS</a></li>
+                <li><a href="men_trabelbags.html">TRABEL BAGS</a></li>
+              </ol>        
+              <ol>
+                <li><strong>SHOES</strong></li>               
+                <li><a href="men_SHOES_all.html">VIEW ALL</a></li>
+                <li><a href="men_boots.html">BOOTS</a></li>
+                <li><a href="men_sneakers.html">SNEAKERS</a></li>
+                <li><a href="men_loafers.html">LOAFERS &amp; DERBIES</a></li>
+                <li><a href="men_sandals.html">ESPADRILLES &amp; SANDALS</a></li>
+              </ol>     
+              <ol>
+                <li><strong>ACCESSORIES</strong></li>
+                <li><a href="men_ACC_all-1.html">VIEW ALL</a></li>
+                <li><a href="men_smallleather.html">SMALL LEATHER GOODS</a></li>
+                <li><a href="men_belts.html">BELTS</a></li>
+                <li><a href="men_jewelry.html">JEWELRY</a></li>
+                <li><a href="men_textile.html">TEXTILE ACCESSORIES</a></li>
+                <li><a href="men_sunglasses.html">SUNGLASSES</a></li>
+              </ol>
+            </div>
+          </li>
+          <li><mark>COLLECTIONS</mark>
+            <div class="col_wrap">
+              <div class="quote">
+                <p>"FASHIONS FADE BUT
+                  STYLE IS ETERNAL."</p>
+                <span>BY YVES SAINT LAURENT</span>
+              </div>
+              <ol>
+                <li>
+                  <a href="C01_women_winter23.html">
+                    WOMEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C03_men_winter23.html">
+                    MEN'S WINTER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C02_women_summer23.html">
+                    WOMEN'S SUMMER 23
+                  </a>
+                </li>
+                <li>
+                  <a href="C04_men_springsummer23.html">
+                    MEN'S SPRING SUMMER 23
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li><mark><a href="sustainability.html">SUSTAINABILITY</a></mark></li>
+          <li><mark><a href="F01_client_service.html">CLIENT SERVICE</a></mark></li>
+        </ul>
+      </nav>
+      <div class="sideicon">
+        <form>
+          <fieldset>
+            <input type="button" value="search" data-panel="searchPanel">
+            <input type="button" value="wishlist" data-panel="wishPanel">
+            <a href="I01_sign_IN.html">my page</a>
+            <input type="button" value="cart" data-panel="cartPanel">
+            <span>+1</span>
+            <input type="button" value="menu" data-panel="muignb">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="sustainContainer">
+    <h2>SUSTAINABILITY</h2>
+    <aside>
+      <ul>
+        <li data-sustain="sustain1" class="activated">APPROACH</li>
+        <li data-sustain="sustain2">STANDARD</li>
+        <li data-sustain="sustain3">MEASURING IMPACT</li>
+        <li data-sustain="sustain4">HOUSE OPERATIONS</li>
+        <li data-sustain="sustain5">RAW MATERIALS</li>
+        <li data-sustain="sustain6">SUPPLY CHAIN</li>
+        <li data-sustain="sustain7">PRODUCTS</li>
+        <li data-sustain="sustain8">CIRCULARITY</li>
+        <li data-sustain="sustain9">CHARITY:WATER</li>
+      </ul>
+    </aside>
+    <ul>
+      <li id="sustain1" class="activated">
+        <img src="images/SUSTAINABILITY_detail_bg_01.png" alt="YSL sustainability image">
+        <h3>APPROACH</h3>
+        <p>SAINT LAURENT’S APPROACH IS ROOTED IN A QUEST TO CONSTANTLY IMPROVE—IN MEANINGFUL AND MEASURABLE WAYS. RECOGNIZING THE 
+          COMPLEX NATURE OF SUSTAINABILITY, THE HOUSE IS ENGAGED IN A BROAD RANGE OF INITIATIVES AIMED AT PROTECTING HUMAN RIGHTS AND 
+          DIGNITY, PRESERVING THE ENVIRONMENT, AND IMPLEMENTING RESPONSIBLE SOURCING.</p>
+        <p>SAINT LAURENT EMBRACES THE RESPONSIBILITY TO WORK TODAY FOR A BETTER TOMORROW. FAR MORE THAN AN ETHICAL NECESSITY, 
+          SUSTAINABILITY IS A FORCE OF INNOVATION AND A GAUGE OF SUCCESS. IT IS EMBEDDED WITHIN THE CULTURE OF THE HOUSE, DRIVING 
+          DECISIONS AND BEHAVIORS AT EVERY LEVEL.</p>
+        <p>TO BUILD AWARENESS OF SUSTAINABILITY WITHIN THE HOUSE, ALL EMPLOYEES ARE ENCOURAGED TO COMPLETE A THREE-PART COURSE ON 
+          THE SUBJECT. THIS CURRICULUM IS ALSO A FUNDAMENTAL COMPONENT OF THE SAINT LAURENT COUTURE INSTITUTE, A SIX-MONTH COURSE 
+          FOR ADVANCED FASHION STUDENTS AND EMPLOYEES OF THE HOUSE THAT WAS DEVELOPED IN PARTNERSHIP WITH THE INSTITUT FRANÇAIS 
+          DE LA MODE. SINCE 2017, APPROXIMATELY 2,000 PEOPLE HAVE PARTICIPATED IN THESE EDUCATIONAL PROGRAMS.</p>
+      </li>
+      <li id="sustain2">
+        <img src="images/SUSTAINABILITY_detail_bg_02.png" alt="YSL sustainability image">
+        <h3>STANDARDS</h3>
+        <p>AS PART OF KERING, SAINT LAURENT IS ENGAGED IN A MULTIFACETED STRATEGY TO ACHIEVE A MORE SUSTAINABLE AND RESPONSIBLE 
+          DEFINITION OF LUXURY. THE HOUSE AND ITS PARTNERS FOLLOW CODES AND STANDARDS DEVELOPED AND REFINED BY KERING SINCE THE 
+          GROUP’S ESTABLISHMENT OF ITS FIRST CODE OF ETHICS 25 YEARS AGO. THESE OPEN-SOURCE GUIDELINES, WHICH ARE REVIEWED AND UPDATED 
+          REGULARLY IN CONSULTATION WITH SUBJECT-MATTER EXPERTS, ADDRESS TOPICS SUCH AS HUMAN RIGHTS, BIODIVERSITY, RAW MATERIAL 
+          SOURCING, AND INTERNAL OPERATIONS.</p>
+        <strong>TOWARD A MORE SUSTAINABLE SUPPLY CHAIN</strong>
+        <ul>
+          <li>KERING GROUP CODE OF ETHICS</li>
+          <li>SUSTAINABILITY PRINCIPLES</li>
+          <li>HUMAN RIGHTS POLICY</li>
+        </ul>
+        <strong>TOWARD MORE SUSTAINABLE MATERIALS AND MANUFACTURING</strong>
+        <ul>
+          <li>BIODIVERSITY STRATEGY</li>
+          <li>ANIMAL WELFARE STANDARDS</li>
+          <li>STANDARDS FOR RAW MATERIALS AND MANUFACTURING PROCESSES</li>
+          <li>PRODUCT RESTRICTED SUBSTANCES LIST</li>
+          <li>MANUFACTURING RESTRICTED SUBSTANCES LIST</li>
+        </ul>
+        <strong>TOWARD MORE SUSTAINABLE STORES</strong>
+        <ul>
+          <li>GUIDELINES FOR STORE PLANNING AND CONSTRUCTION</li>
+          <li>GUIDELINES FOR STORE OPERATIONS AND MANAGEMENT</li>
+        </ul>
+      </li>
+      <li id="sustain3">
+        <img src="images/SUSTAINABILITY_detail_bg_03.png" alt="YSL sustainability image">
+        <h3>MEASURING IMPACT</h3>
+        <p>SAINT LAURENT IS ENGAGED TO MAKING THE ENVIRONMENTAL IMPACTS OF ITS ACTIVITIES VISIBLE, QUANTIFIABLE, AND COMPARABLE THROUGH 
+          KERING’S ENVIRONMENTAL PROFIT &amp; LOSS (EP&L) ACCOUNT. SINCE 2012, THIS TOOL HAS BEEN USED TO MEASURE CARBON EMISSIONS, WATER 
+          CONSUMPTION, AIR AND WATER POLLUTION, LAND USE, AND WASTE PRODUCTION ALONG THE ENTIRE SUPPLY CHAIN. THE IMPACTS ARE THEN 
+          CONVERTED INTO MONETARY VALUES, HELPING TO GUIDE STRATEGY, IMPROVE PROCESSES, AND CHOOSE THE BEST-ADAPTED TECHNOLOGIES.</p>
+        <p>AMONG THE FINDINGS REVEALED BY THE EP&L IS THAT APPROXIMATELY 70% OF IMPACTS HAPPEN AT THE LEVEL OF RAW MATERIAL PRODUCTION 
+          AND PROCESSING. INSIGHTS SUCH AS THESE HAVE INFORMED THE CREATION OF SUSTAINABILITY PROGRAMS TAILORED TO THE HOUSE AND TO 
+          EACH PRODUCT CATEGORY. THESE INITIATIVES HAVE BEEN DEPLOYED ACROSS THE VALUE CHAIN, WITH A FOCUS ON MAXIMIZING RESOURCE 
+          EFFICIENCY, IMPLEMENTING CIRCULARITY STRATEGIES, AND DEPLOYING SUSTAINABLE SOURCING PRACTICES, PARTICULARLY FOR FIBERS AND 
+          LEATHER.</p>
+        <p>IN ALIGNMENT WITH KERING’S 2025 SUSTAINABILITY STRATEGY, SAINT LAURENT IS ON TRACK TO ACHIEVE A 40% REDUCTION IN EP&L INTENSITY 
+          RELATIVE TO GROWTH, USING 2015 AS A BASELINE. THIS TARGET REQUIRES ACTION ACROSS THE SUPPLY CHAIN, FROM FARM TO FINAL PRODUCT 
+          TO MARKET DISTRIBUTION. IN ADDITION, SAINT LAURENT IS COMMITTED TO ACHIEVING NET-ZERO GREENHOUSE GAS EMISSIONS BY 2050. THE 
+          HOUSE MEETS ITS CARBON OFFSET PROGRAM TARGETS THROUGH VERIFIED REDD+ PROJECTS, WHICH NOT ONLY CONSERVE CRITICAL FORESTS 
+          AND BIODIVERSITY BUT ALSO SUPPORT THE LIVELIHOODS OF LOCAL COMMUNITIES.</p>
+      </li>
+      <li id="sustain4">
+        <img src="images/SUSTAINABILITY_detail_bg_04.png" alt="YSL sustainability image">
+        <h3>HOUSE OPERATIONS</h3>
+        <p>“AT SAINT LAURENT, SUSTAINABILITY IS A FUNDAMENTAL COMMITMENT. IT IS NOT A MARKETING EXERCISE BUT A MENTALITY.”
+          FRANCESCA BELLETTINI, CEO</p>
+        <p>IN ADDITION TO SETTING RIGOROUS STANDARDS FOR PARTNERS, SAINT LAURENT APPLIES ITS SUSTAINABILITY PRINCIPLES AND INDUSTRY-
+          LEADING PRACTICES WITHIN THE HOUSE.</p>
+        <p><strong>ENERGY CONSUMPTION.</strong> IN 2020, 86% OF THE ELECTRICITY CONSUMED BY SAINT LAURENT ATELIERS, OFFICES, AND STORES CAME FROM 
+          RENEWABLE SOURCES. THIS IS ON TRACK TO REACH 100% BY 2022. THE HOUSE PRIORITIZES THE USE OF ALTERNATIVE ENERGY, AS IN ITS 
+          ANGERS READY-TO-WEAR ATELIER, WHICH USES A BIOMASS HEATING SYSTEM.</p>
+        <p><strong>ENVIRONMENTAL CERTIFICATIONS.</strong>
+           SEVENTEEN OF THE HOUSE’S SITES HAVE EARNED ENVIRONMENTAL CERTIFICATIONS, INCLUDING 13 STORES 
+          THAT HAVE ATTAINED LEED (LEADERSHIP IN ENERGY AND ENVIRONMENTAL DESIGN) PLATINUM STATUS, THE HIGHEST LEVEL AWARDED. THE 
+          SAINT LAURENT HEADQUARTERS ON RUE DE BELLECHASSE IS CERTIFIED BY BREEAM AND BY HQE AT “EXCELLENT” AND “EXCEPTIONAL” LEVELS. 
+          ALL NEW SITES ARE DESIGNED, DEVELOPED, AND OPERATED BASED UPON RIGOROUS ENVIRONMENTAL GUIDELINES, HELPING THE HOUSE TO 
+          ACHIEVE NEARLY 100% ENERGY-EFFICIENT LED LIGHTING ACROSS THE GLOBAL STORE NETWORK.</p>
+        <p><strong>SUSTAINABLE PACKAGING.</strong> COMPOSED PRIMARILY OF ENVIRONMENTALLY FRIENDLY AND DULY CERTIFIED MATERIALS, THE HOUSE’S PACKAGING 
+          INCLUDES FLANNELS MADE OF GLOBAL ORGANIC TEXTILE STANDARD (GOTS)-CERTIFIED COTTON. SHOPPING BAGS ARE MADE OF PAPER THAT 
+          CONTAINS A MINIMUM OF 40% RECYCLED CONTENT AND IS CERTIFIED BY THE FOREST STEWARDSHIP COUNCIL (FSC), WITH HANDLES OF 
+          RECYCLED POLYESTER CERTIFIED BY THE GLOBAL RECYCLED STANDARD (GRS). TISSUE PAPER, STATIONERY, PRINTED MATERIALS, AND GIFT BOXES 
+          ARE ALSO FSC CERTIFIED.</p>
+        <p><strong>ELIMINATING SINGLE-USE PLASTICS.</strong> AS PART OF SAINT LAURENT'S COMMITMENT TO ELIMINATING SINGLE-USE PLASTICS ACROSS OPERATIONS, 
+          EMPLOYEES OF THE HOUSE, STAFF MEMBERS, AND EVENT PARTICIPANTS ARE PROVIDED WITH REUSABLE CUPS AND/OR WATER BOTTLES. 
+          ADDITIONALLY, BEGINNING WITH THE SPRING 22 COLLECTIONS, ALL GARMENT COVERINGS USED DURING TRANSPORT WILL BE REUSABLE. THESE 
+          100% RECYCLED PLASTIC COVERINGS WILL REMAIN INTACT FROM THE ATELIER TO THE STORE.</p>
+      </li>
+      <li id="sustain5">
+        <img src="images/SUSTAINABILITY_detail_bg_05.png" alt="YSL sustainability image">
+        <h3>RAW MATERIALS</h3>
+        <p>SAINT LAURENT RECOGNIZES THAT INTENSE, CONSISTENT SCRUTINY OF RAW MATERIALS AND THEIR SOURCES IS VITAL TO REDUCING 
+          ENVIRONMENTAL IMPACT. THE HOUSE IS ON TRACK TO ACHIEVE 100% TRACEABILITY OF KEY RAW MATERIALS AND 100% COMPLIANCE WITH 
+          KERING’S STANDARDS FOR RAW MATERIALS AND MANUFACTURING PROCESSES BY 2025.</p>
+        <p><strong>MONITORING PROGRESS.</strong> IN ADDITION TO TRAINING IN-HOUSE TEAMS AND EXTERNAL PARTNERS TO FOLLOW KERING GUIDELINES, SAINT 
+          LAURENT APPROACHES EACH COLLECTION WITH THE GOAL OF INCREASING THE SHARE OF PRODUCTS MADE WITH SUSTAINABLE RAW 
+          MATERIALS. AN ANALYSIS OF EACH COLLECTION IS USED TO TRACK PROGRESS AND TO ENSURE ONGOING IMPROVEMENT, WITH REFERENCE TO 
+          LEADING CERTIFICATION SCHEMES FOCUSED ON TOPICS SUCH AS ENVIRONMENTAL IMPACT, RESPONSIBLE SOURCING, AND HUMAN RIGHTS.</p>
+        <p><strong>TEXTILES.</strong> IN 2020, 60% OF THE COTTON PROCURED BY THE HOUSE WAS GLOBAL ORGANIC TEXTILE STANDARD (GOTS) CERTIFIED. BY THE END OF 
+          2021, THE SHARE WILL HAVE REACHED 80%. IN 2020, 40% OF THE SILK AND WOOL SOURCED BY THE HOUSE WAS CERTIFIED SUSTAINABLE, EITHER 
+          BY GOTS OR BY THE RESPONSIBLE WOOL STANDARD (RWS), AND 50% OF THE VISCOSE USED ORIGINATED IN SUSTAINABLY MANAGED FORESTS, AS 
+          CERTIFIED BY THE FOREST STEWARDSHIP COUNCIL (FSC). SYNTHETICS REPRESENT LESS THAN 5% OF ALL TEXTILES USED BY SAINT LAURENT, AND 
+          MOST ARE FROM RECYCLED SOURCES, AS CERTIFIED BY THE GLOBAL RECYCLED STANDARD (GRS).</p>
+        <p><strong>HIDES.</strong> LEATHER AND PRECIOUS SKINS ARE SOURCED THROUGH A DEDICATED SYSTEM THAT CAN TRACK HIDES TO THEIR COUNTRY OF ORIGIN, 
+          FOLLOWING THEM FROM FARMING TO PROCESSING TO TANNING TO FINISHING. KEY METRICS BASED ON KERING STANDARDS ARE CALCULATED 
+          ON A MONTHLY BASIS AND FACTORED INTO SAINT LAURENT VENDOR RATINGS. IN 2020, 32% OF THE HOUSE’S LEATHERGOODS USED HIDES 
+          TANNED WITHOUT METALS, WHICH REDUCES WATER AND ENERGY CONSUMPTION AND AVOIDS WATER POLLUTION AT TANNERY LEVEL. 
+          STARTING FROM FALL 22 COLLECTIONS, SAINT LAURENT WILL NOT BE USING FUR.</p>
+        <p><strong>SUSTAINABLE AGRICULTURE.</strong> THE HOUSE IS COMMITTED TO PROMOTING REGENERATIVE AGRICULTURAL PRACTICES AND SUSTAINABLE LIVESTOCK 
+          PRODUCTION SYSTEMS. INITIATIVES INCLUDE THE CREATION OF A SUSTAINABILITY IMPACT VALUE PLATFORM IN SOUTH AFRICA THAT 
+          INCENTIVIZES PARTNERS THROUGHOUT THE VALUE CHAIN TO IMPLEMENT REGENERATIVE FARMING PRACTICES. THIS PROJECT ALSO USES LASER 
+          TECHNOLOGY TO TRACE LAMBSKINS FROM FARMS TO FINISHED GOODS.</p>
+      </li>
+      <li id="sustain6">
+        <img src="images/SUSTAINABILITY_detail_bg_06.png" alt="YSL sustainability image">
+        <h3>SUPPLY CHAIN</h3>
+        <p>WITH A RESPECT FOR AND PROTECTION OF HUMAN RIGHTS, SAINT LAURENT REQUIRES ITS SUPPLIERS TO MEET STANDARDS SET BY KERING THAT 
+          ADDRESS TOPICS SUCH AS WORKING CONDITIONS, ENVIRONMENTAL STEWARDSHIP, AND THE RESPONSIBLE USE OF CHEMICALS THAT MAY BE 
+          HAZARDOUS TO PEOPLE OR THE PLANET.</p>
+        <p><strong>CLEAN BY DESIGN.</strong> THROUGH PARTICIPATION IN KERING’S CLEAN BY DESIGN INITIATIVE SINCE 2015, THE HOUSE PROMOTES SUSTAINABLE 
+          PRACTICES RELATED TO ENERGY AND WATER CONSUMPTION, AIR AND WATER POLLUTION, WASTE, AND LAND USE THROUGHOUT ITS SUPPLY 
+          CHAIN.</p>
+        <p><strong>MATERIALS INNOVATION LAB.</strong> SAINT LAURENT WORKS CLOSELY WITH THE MILAN-BASED MATERIALS INNOVATION LAB (MIL), ESTABLISHED BY 
+          KERING IN 2013 TO SUPPORT THE INTEGRATION OF SUSTAINABLE MATERIALS INTO SUPPLY CHAINS. WITH A FOCUS ON COTTON, SILK, CASHMERE, 
+          AND VISCOSE, MIL PROVIDES SAINT LAURENT AND ITS KEY SUPPLIERS WITH RESOURCES, TOOLS, AND NEW SOLUTIONS TO HELP THEM 
+          UNDERSTAND HOW TO MAKE MORE SUSTAINABLE CHOICES IN PRODUCT DEVELOPMENT.</p>
+        <p><strong>ENSURING SUPPLIER COMPLIANCE.</strong> THE HOUSE ACTIVELY MONITORS COMPLIANCE WITH ITS RIGOROUS STANDARDS THROUGH AUDITS 
+          CONDUCTED BY KERING OR BY THIRD-PARTY AUDITORS. ALL MANUFACTURING SUPPLIERS HAVE BEEN AUDITED AT LEAST ONCE, AND 737 AUDITS 
+          WERE PERFORMED IN 2020. ANY COMPLIANCE BREACH IS ADDRESSED BY A DEDICATED SAINT LAURENT TEAM THAT SPECIALIZES IN THE 
+          PARTICULAR PRODUCT CATEGORY.</p>
+        <p><strong>A GLOBAL NETWORK.</strong> AS OF MAY 2021, THE HOUSE WORKED WITH APPROXIMATELY 1,000 MANUFACTURING (DIRECT AND INDIRECT) AND RAW 
+          MATERIAL SUPPLIERS (DIRECT), WITH 94% LOCATED IN ITALY, 3% IN FRANCE OR SPAIN, AND 2% IN EASTERN EUROPE. THEY HAVE AN AVERAGE OF 
+          50 EMPLOYEES, 51% OF WHICH ARE WOMEN. THE REMAINING 1% OF SUPPLIERS ARE LOCATED PRIMARILY IN INDIA, FOR HAND EMBROIDERY, AND 
+          IN CHINA, FOR PACKAGING.</p>
+      </li>
+      <li id="sustain7">
+        <img src="images/SUSTAINABILITY_detail_bg_07.png" alt="YSL sustainability image">
+        <h3>PRODUCTS</h3>
+        <p>SAINT LAURENT PRODUCTS REPRESENT THE CONFLUENCE OF CRAFTSMANSHIP AND SUSTAINABILITY. THE HOUSE APPROACHES DESIGN, 
+          DEVELOPMENT, AND MANUFACTURING HOLISTICALLY, SELECTING MATERIALS AND SUPPLIERS RESPONSIBLY, ENSURING FAIR WORKING 
+          CONDITIONS FOR ARTISANS, AND WORKING TO MINIMIZE ENVIRONMENTAL IMPACTS AT EVERY STEP OF THE WAY.</p>
+        <p><strong>LE SMOKING AND BEYOND.</strong> THE FINELY GRAINED GRAIN DE POUDRE WOOL FAVORED BY YVES SAINT LAURENT AND USED IN LE SMOKING MEETS 
+          THE HIGHEST STANDARDS OF SUSTAINABILITY. SINCE 2015, IT HAS BEEN SOURCED FROM FARMS IN ARGENTINA THAT ARE CERTIFIED ORGANIC BY 
+          THE GLOBAL ORGANIC TEXTILE STANDARD (GOTS) AND THE RESPONSIBLE WOOL STANDARD (RWS). THE SILK USED TO LINE LE SMOKING AND 
+          OTHER TAILORED GARMENTS IS GROWN IN CHINA ON GOTS-CERTIFIED FARMS.</p>
+        <p><strong>LE VESTIAIRE.</strong> BEGINNING WITH THE FALL 22 COLLECTIONS, THE ICONIC READY-TO-WEAR PIECES OF LE VESTIAIRE WILL BE MADE EXCLUSIVELY 
+          OF SUSTAINABLE AND TRACEABLE MATERIALS. THIS INITIATIVE IS THE RESULT OF SEVERAL YEARS OF RESEARCH AND DEVELOPMENT TO ENSURE 
+          EXCEPTIONAL FABRICS WHILE PRESERVING THE SAVOIR FAIRE AND HERITAGE OF SAINT LAURENT.</p>
+        <p><strong>LE MONOGRAMME</strong>. THE TRIMMINGS OF SMALL LEATHER GOODS OF LE MONOGRAMME LINE ARE MADE WITH OFFCUTS: REMNANTS GENERATED 
+          BY THE CUTTING OF LARGER HIDES IN SAINT LAURENT ATELIERS. THIS PROCESS, WHICH MAXIMIZES EFFICIENCY AND MINIMIZES WASTE, IS MADE 
+          POSSIBLE BY ADVANCED TECHNOLOGY AND DEDICATED PROGRAMS THAT HAVE BROUGHT THE MAJORITY OF LEATHER CUTTING IN HOUSE.</p>
+        <p><strong>SUNSET LINE.</strong> BEGINNING WITH THE WOMEN’S FALL 21 COLLECTION, SELECTED HANDBAGS WITHIN THE SUNSET LINE ARE ALSO MADE WITH 
+          OFFCUTS. THIS UPCYCLED LEATHER, HARVESTED FROM THE CUTTING ROOM FLOOR, IS SUPPORTED BY TECHNOLOGY TO ENSURE TRACEABILITY.</p>
+        <p><strong>BACKPACKS.</strong> FROM SPRING 22 COLLECTION, ALL CARRY OVER BACKPACKS IN NYLON WILL BE MADE EXCLUSIVELY WITH ECONYL® RECYCLED 
+          NYLON. FOLLOWING A CIRCULARITY APPROACH, ECONYL® IS MADE FROM WASTE SUCH AS OLD FISHING NETS RECOVERED FROM THE OCEAN. 
+          SPRING 22 SEASONAL COLORS AND NEW SHAPES ARE ALSO PRESENTED IN ECONYL® REGENERATED NYLON.</p>
+        <p><strong>CERTIFICATIONS AND BEST PRACTICES.</strong> APPLICABLE SUSTAINABILITY CERTIFICATIONS ARE INCLUDED IN PRODUCT DESCRIPTIONS. SUCH 
+          SPECIFICATIONS ARE ASSURANCES OF BEST-IN-CLASS PRACTICES IN AREAS SUCH AS TRACEABLE AND RESPONSIBLE RAW MATERIAL SOURCING, 
+          ORGANIC AGRICULTURE, RESPONSIBLE MANUFACTURING, AND THE USE OF RECYCLED OR UPCYCLED MATERIALS.</p>
+      </li>
+      <li id="sustain8">
+        <img src="images/SUSTAINABILITY_detail_bg_08.png" alt="YSL sustainability image">
+        <h3>CIRCULARITY</h3>
+        <p>SAINT LAURENT EMBRACES THE TRANSITION TO A TRULY CIRCULAR ECONOMY, WITH THE KNOWLEDGE THAT IT REQUIRES A REIMAGINING OF 
+          HOW RESOURCES ARE PRODUCED, USED, AND REUSED.</p>
+        <p><strong>THE TRANSFORMATION BEGINS WITH LEATHERGOODS.</strong> DEDICATED PROGRAMS HAVE BROUGHT THE MAJORITY OF LEATHER CUTTING INTO SAINT 
+          LAURENT ATELIERS, WHICH ARE EQUIPPED WITH ADVANCED TECHNOLOGY TO MAXIMIZE EFFICIENCY AND MINIMIZE WASTE. THIS 
+          CENTRALIZATION ALSO ALLOWS OFFCUTS TO BE USED IN THE PRODUCTION OF SMALL LEATHER GOODS: A PROCESS STARTED FOR LE 
+          MONOGRAMME THAT HAS BEEN EXTENDED TO OTHER RANGES.</p>
+        <p><strong>INNOVATION FROM THE GROUND UP.</strong> AS PART OF AN INITIATIVE TO USE SURPLUS MATERIALS AND OFFCUTS IN PLACE OF VIRGIN MATERIALS, 
+          SAINT LAURENT IS GIVING A SECOND LIFE TO REMNANTS FROM THE CUTTING ROOM FLOOR. IN 2019, 200 TONS OF LEATHER OFFCUTS AND 28,000 
+          SQUARE METERS OF FABRIC WERE RECOVERED. AN EXPANDED USE OF THE UPCYCLED LEATHER, WHICH IS SUPPORTED BY TECHNOLOGY TO 
+          ENSURE TRACEABILITY, IS FEATURED IN THE WOMEN’S FALL 21 COLLECTION AS PART OF HANDBAGS WITHIN THE SUNSET LINE. THE HOUSE ALSO 
+          TRANSFORMS LEATHER OFFCUTS INTO FLOORING USED IN RECENTLY OPENED SAINT LAURENT STORES IN EUROPE AND THE MIDDLE EAST.</p>
+        <p><strong>REUSE AND RECYCLING.</strong> THE HOUSE DONATES SURPLUS READY-TO-WEAR FABRICS TO FASHION SCHOOLS AND CHARITABLE ORGANIZATIONS. 
+          TEXTILE REMNANTS AND OVERAGE ARE ALSO PROVIDED TO THE FRENCH SOCIAL ENTERPRISE LE RELAIS FOR RECYCLING INTO NEW PRODUCTS, 
+          INCLUDING THE INSULATION PANELS USED AT THE SAINT LAURENT HEADQUARTERS ON RUE DE BELLECHASSE AND AT SELECTED STORES.</p>
+        <p><strong>MORE SUSTAINABLE EVENTS.</strong> RENTED AND REUSABLE ELEMENTS ARE PRIORITIZED FOR ALL HOUSE EVENTS AND FASHION SHOWS. IN ALL OTHER 
+          INSTANCES, MATERIALS ARE RECYCLED. ELEMENTS USED FOR EVENTS MAY ALSO BE GIVEN A SECOND LIFE IN ARTISTIC PROJECTS THROUGH 
+          SAINT LAURENT’S PARTNERSHIP WITH LA RESERVE DES ARTS, A PARIS-BASED NONPROFIT THAT SUPPORTS ARTISTS, ART STUDENTS, CRAFTSMEN, 
+          AND OTHER CULTURE WORKERS THROUGH CIRCULAR PRACTICES.</p>
+      </li>
+      <li id="sustain9">
+        <img src="images/SUSTAINABILITY_detail_bg_09.png" alt="YSL sustainability image">
+        <h3>CHARITY : WATER</h3>
+        <p>“PEOPLE NEED CLEAN WATER TO BE HEALTHY, TO THRIVE. WATER IS THE MOST BASIC NEED. WATER IS LIFE.”
+          SCOTT HARRISON, FOUNDER OF CHARITY: WATER</p>
+        <p>ON A MISSION TO END THE GLOBAL WATER CRISIS, CHARITY: WATER BRINGS CLEAN AND SAFE DRINKING WATER TO PEOPLE IN DEVELOPING 
+          COUNTRIES. SAINT LAURENT HAS BEEN A BRAND PARTNER OF THE NON-PROFIT ORGANIZATION SINCE 2017, FUNDING NEARLY 40 WATER 
+          PROJECTS THAT WILL SERVE MORE THAN 8,000 PEOPLE ACROSS ETHIOPIA, RWANDA, INDIA, AND MALAWI.</p>
+        <p><strong>WATER CHANGES EVERYTHING.</strong> GAINING ACCESS TO CLEAN WATER IMPROVES THE HEALTH AND WELL-BEING OF ENTIRE COMMUNITIES. IT IS 
+          TRANSFORMATIVE FOR THE WOMEN AND GIRLS WHO ARE TYPICALLY RESPONSIBLE FOR COLLECTING WATER EACH DAY, GIVING THEM MORE 
+          TIME TO PURSUE EDUCATIONAL AND ECONOMIC OPPORTUNITIES. THESE EMPOWERING IMPACTS CONTINUE SAINT LAURENT’S LEGACY OF 
+          SUPPORT FOR THE LIBERATION OF WOMEN.</p>
+        <p><strong>SHAPING A SUSTAINABLE FUTURE.</strong> THE SMALL WATER SYSTEMS RELIED ON BY MORE THAN 3.4 BILLION PEOPLE OFTEN BREAK DOWN, AND 
+          REPAIRS CAN BE CHALLENGING. INNOVATIVE TECHNOLOGY CAN HELP TO FIX WATER SYSTEMS BEFORE THEY BREAK. IN 2020, SAINT LAURENT 
+          EXPANDED ITS PARTNERSHIP WITH CHARITY: WATER AND, JOINED By KERING, HELPED TO FUND THE NEXT GENERATION OF REMOTE SENSORS FOR 
+          MONITORING HAND PUMPS IN RURAL COMMUNITIES AROUND THE WORLD. A PILOT PROGRAM IS TESTING THESE DIGITAL SENSORS IN THE FIELD, 
+          WITH A PLAN TO SCALE UP PRODUCTION AND DEPLOYMENT BY 2022.
+          </p>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <div>
+      <h2>
+        <a href="index.html">
+          <img src="images/logo_white.png" alt="Thank you for visiting Saint Laurent">
+        </a>
+      </h2>
+      <ul>
+        <li><a href="F01_client_service.html">CLIENT SERVICE</a></li>
+        <li><a href="F03_track_order.html">TRACK ORDER</a></li>
+        <li><a href="F02_email.html">EMAIL</a></li>
+        <li><a href="F04_store_locator.html">STORE LOCATOR</a></li>
+        <li><a href="L06_legal_notice.html">LEGAL NOTICES</a></li>
+        <li>
+          <input type="button" value="SUBSCRIBE TO THE NEWSLETTER" data-panel="newsPanel">
+        </li>
+      </ul>
+    </div>
+    <div id="newsPanel">
+      <input type="button" value="close" class="btn_close">
+      <h2>NEWSLETTER</h2>
+      <p>SUBSCRIBE TO THE SAINT LAURENT NEWSLETTER TO RECEIVE 
+        EXCLUSIVE INFORMATION ON NEW COLLECTIONS, FASHION 
+        SHOWS AND EVENTS.</p>
+      <span>REQUIRED FIELD</span>
+      <form>
+        <label>CIVILITY</label>
+        <select>
+          <option>PLEASE SELECT</option>
+          <option>MISS, MRS, MS</option>
+          <option>MR.</option>
+          <option>MX</option>
+          <option>I'D RATHER NOT SAY</option>
+        </select>
+        <label>EMAIL</label>
+        <input type="email" placeholder="EMAIL" required>
+        <input type="submit" value="SEND" class="btn_send">
+      </form>
+      <p>BY SIGNING UP BELOW, YOU AGREE TO STAY IN TOUCH WITH SAINT LAURENT. 
+        WE WILL USE YOUR PERSONAL INFORMATION TO PROVIDE YOU WITH 
+        TAILORED UPDATES ABOUT OUR ACTIVITIES, PRODUCTS AND SERVICES. FOR 
+        MORE INFORMATION ABOUT OUR PRIVACY PRACTICES AND YOUR RIGHTS, 
+        PLEASE CONSULT OUR PRIVACY POLICY.</p>
+    </div>
+    <div>
+      <span>© KERING 2019</span>
+      <div class="snsArea">
+        <ul>
+          <li><a href="https://pf.kakao.com/_rAMaxb">YSL kakaotalk</a></li>
+          <li><a href="https://www.facebook.com/ysl">YSL facebook</a></li>
+          <li><a href="https://www.twitter.com/ysl">YSL twitter</a></li>
+          <li><a href="https://www.instagram.com/ysl/">YSL instagram</a></li>
+          <li><a href="https://www.youtube.com/ysl">YSL youtube</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
