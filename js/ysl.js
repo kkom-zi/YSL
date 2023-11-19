@@ -23,14 +23,6 @@ $(document).ready(function(){
   panelClick(".mywishListBox > div > input[type='button']");
   panelClick(".mywishListBox > div > ul:last-of-type > li > input:button[value='ADD TO BAG']");
   popupClick('[data-popup]');
-  // popupClick(".myorderBox > div > div > ul:first-child > li:last-child > input");
-  // popupClick(".myorderBox > div > div > ul:nth-child(2) > li:last-child > input");
-  // popupClick(".myAddressBox > div > ul:last-of-type > li:last-child > input");
-  // popupClick(".myAddressBox > div > ul:last-of-type > li:not(:last-child) > input:nth-of-type(2)");
-  // popupClick("#requestPopup form fieldset > input:button[value='ADDRESS LIST']");
-  // popupClick(".myPaymentBox > div > ul:last-of-type > li:last-child > input");
-  // popupClick(".myPaymentBox > div > ul:last-of-type > li:first-child > input:first-of-type");
-  // popupClick(".myPaymentBox > div > ul:last-of-type > li:nth-child(2) > input:first-of-type");
   deleteInfo(".myAddressBox > div > ul:last-of-type > li:first-child > input:button[value='delete']");
   deleteInfo(".myAddressBox > div > ul:last-of-type > li:nth-child(2) > input:button[value='delete']");
   deleteInfo(".myPaymentBox > div > ul:last-of-type > li:first-child > input:button[value='delete']");
@@ -74,8 +66,6 @@ function gnbAccordion(target){
 function productList(colorBtn,targetImg){
   var currentImgName = '';
   $(colorBtn).click(function(){
-    // ? click 시 ImgName 변경.(color 별) -> currentImgName(아래 ColorName 응용)
-    // ? colorName 저장 -> currentColorName
     currentImgName="images/"+$(this).attr("data-src")+".png";
     currentColorName=$(this).attr("data-src");
     $(colorBtn).removeClass("active");
@@ -83,8 +73,6 @@ function productList(colorBtn,targetImg){
     $(this).closest('ol').siblings('img').attr("src",currentImgName);
   });
   $(targetImg).hover(function(){
-    // ? 변경된 ImgName 불러오기
-    // ? img hover 부분 처리 -> 평상시 상태 , _hover 상태.
     $(this).attr("src",$(this).attr("src").replace(".png","_hover.png"));
   },function(){
     $(this).attr("src",$(this).attr("src").replace("_hover.png",".png"));
@@ -122,8 +110,6 @@ function deleteCard(deleteBtn){
     $(activePage).addClass("active");
   });
 }
-
-// !
 function popupClick(openBtn){
   var currentPopup = null;
   $(openBtn).click(function(e){
@@ -136,10 +122,6 @@ function popupClick(openBtn){
     e.preventDefault();
     $(this).closest('[id]').removeClass("active");
   });
-  
-  // $('[type="submit"]').click(function(e){
-  //   // 데이터 전송 코드 작성
-  // })
 }
 function deleteInfo(deleteBtn){
   $(deleteBtn).click(function(){
@@ -188,10 +170,5 @@ function viewMore(){
       $(this).val('VIEW ALL');
       $("[class*='lookBook'] > ul:first-of-type").removeClass("viewAll");
     }
-  });
-}
-function nameAnchor(){
-  $("a").click(function(){
-    
   });
 }
