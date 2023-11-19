@@ -1141,8 +1141,6 @@ select{
     header > .panel > #cartPanel div strong{
         font-size: 15px; float: right;
     }
-    /* ? header panel end 
-        ? header start*/
     header{
         width: 100%; background-color: rgba(0, 0, 0, 0.3);
         position: fixed; z-index: 100; top: 0; left: 0;
@@ -1342,7 +1340,6 @@ select{
     header > .wrap > div form fieldset :last-child{
         display: none;
     }
-    /*? index header background-color */
     header:not(.transparentbg){
         background-color: #fff;
     }
@@ -1369,8 +1366,7 @@ select{
     header:not(.transparentbg) > .wrap > div form fieldset span{
         color: #232323;
     }
-    /* ? header end
-        ? footer start */
+
     footer{
         background-color: #232323; position: relative;
     }
@@ -1495,8 +1491,7 @@ select{
     footer > div:last-child .snsArea ul li:nth-child(3){background-image: url('../images/icon_sns_03.png');}
     footer > div:last-child .snsArea ul li:nth-child(4){background-image: url('../images/icon_sns_04.png');}
     footer > div:last-child .snsArea ul li:nth-child(5){background-image: url('../images/icon_sns_05.png');}
-    /* ? footer end
-       ? pager start */
+    
     .pager{
         width: 640px; margin: 0 auto;
         position: relative;
@@ -1535,8 +1530,7 @@ select{
     .pager ol li.active a{
         color: #f4f4f4; display: block;
     }
-    /* ? pager end
-       ? smallnav start */
+
     nav.smallMenu{
         margin-bottom: 20px;
     }
@@ -1556,5 +1550,4 @@ select{
     nav.smallMenu ol li a{
         color: #454545; display: block;
     }
-    /* ? smallnav end */
 }
