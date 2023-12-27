@@ -38,7 +38,7 @@ li.lime{background-color: #86965a;}
     display: none;
   }
   .indexContainer > ul{
-    width: 100%;
+    width: 100%; padding-top: 1.04vw; box-sizing: border-box;
   }
   .indexContainer > ul li{
     width: 100%; text-align: center; background-size: contain; background-position: center; background-repeat: no-repeat;
@@ -48,7 +48,7 @@ li.lime{background-color: #86965a;}
     line-height: 56.25vw; color: #fff; text-decoration: underline; display: block; font-size: 20px; font-weight: 600; width: 100%;
   }
   .indexContainer > ul li:first-of-type{
-    background-image: url('../images/bg_01.png'); margin-top: 60px;
+    background-image: url('../images/bg_01.png');
   }
   .indexContainer > ul li:last-of-type{
     background-image: url('../images/bg_02.png');
